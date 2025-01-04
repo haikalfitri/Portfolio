@@ -1,235 +1,493 @@
-theme: jekyll-theme-minimal
+<!DOCTYPE html>
+<html lang="en">
 
-<!DOCTYPE HTML>
-<!--
-	
--->
-<html>
-	<head>
-		<title>PORTFOLIO MUHAMMAD HAIKAL FITRI BIN HASSIM @ HUSAIN</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Haikal Fitri</title>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Welcome
-						</h1>
-						<p>Hello, I'm Muhammad Haikal Fitri Bin Hassim @ Husain, an IT graduate actively participating in the 
-							Petronas GEES Programme. With a passion for technology and a drive for progress learning, 
-							I'm seizing the opportunity to refine my skills in IT while embracing the collaborative atmosphere 
-							fostered by the program. I'm dedicated to contributing my expertise to dynamic work 
-							environments and currently on the lookout for new opportunities to apply my knowledge and 
-							propel my career forward.
-							.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Tech Talents</a>
-					</header>
+    <!-- custom css -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Main Page</a></li>
-							<li><a href="generic.html">Generic Page</a></li>
-							<li><a href="elements.html">Elements Reference</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+<body>
+    
+    <!--header-->
+    <header class="active">
+        <a href="#" class="logo">Welcome!</a>
+        
+        <i class='bx bx-menu' id="menu-icon"></i>
 
-				<!-- Main -->
-					<div id="main">
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">Projects</a>  
+            <a href="#">Resume</a> 
+            <a href="#">Portfolio</a> 
+            <a href="#">Contact</a> 
+        </nav>
+    </header>
+    
+    <!-- Bars Background -->
+     <div class="bars-box active">
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:1;"></div>
+     </div>
+    
 
-						<!-- Featured Post 
-							<article class="post featured">
-								<header class="major">
-									<span class="date">Highlight</span>
-									<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
-									<h2><a href="#"><br />
-									</a></h2>
-									<p>A little about myself!</p>
-								</header>
--->
-								<!--
-								<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="#" class="button large">Full Story</a></li>-->
-								</ul>
-							</article>
+    <!--Home Section-->
+    <section class="home active">
+        <div class="home-detail">
+            <h1>Haikal Fitri</h1>
+            <h2>I'm 
+                <span style="--i:4;" data-text="Open to Work">Open to Work</span>   
+                <span style="--i:3;" data-text="Open to Work">Open to Work</span>   
+                <span style="--i:2;" data-text="Open to Work">Open to Work</span>   
+                <span style="--i:1;" data-text="Open to Work">Open to Work</span>   
+            </h2>
+            <p>Passionate graduate eager to learn, contribute, and take on challenging opportunities.</p>
+            <div class="btn-sci">
+                <a href="assets/RESUME MUHAMMAD HAIKAL FITRI BIN HASSIM @ HUSAIN.pdf" class="btn">Download Resume</a>
+                <div class="sci">
+                    <a href="https://github.com/haikalfitri"><i class='bx bxl-github' ></i><span>Visit Github</span></a>
+                    <a href="https://www.linkedin.com/in/muhdhaikalfitri/"><i class='bx bxl-linkedin-square' ></i><span>View LinkedIN</span></a>
+                    <a href="mailto:muhammadhaikalfitri.hassim@gmail"><i class='bx bxs-envelope' ></i><span>Write email</span></a>
+                    <a href="tel:+601119329198"><i class='bx bx-phone-call'></i> <span>Contact me</span></a>
+                    <a href="https://wa.me/01119329198"><i class='bx bxl-whatsapp' ></i><span>WhatsApp me</span></a>
+                </div>
+                
+            </div>    
+        </div>
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="images/homepage.png"  >
+                </div>
+            </div>
+        </div>
+    </section>
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<span class="date">April 24, 2017</span>
-										<h2><a href="#">Sed magna<br />
-										ipsum faucibus</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 22, 2017</span>
-										<h2><a href="#">Primis eget<br />
-										imperdiet lorem</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 18, 2017</span>
-										<h2><a href="#">Ante mattis<br />
-										interdum dolor</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 14, 2017</span>
-										<h2><a href="#">Tempus sed<br />
-										nulla imperdiet</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 11, 2017</span>
-										<h2><a href="#">Odio magna<br />
-										sed consectetur</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 7, 2017</span>
-										<h2><a href="#">Augue lorem<br />
-										primis vestibulum</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-							</section>
+     <!--Project Section-->
+     <section class="projects ">
+        <h2 class="heading">My <span>Projects</span></h2>
+        <div class="projects-container">
 
-						<!-- Footer -->
-							<footer>
-								<div class="pagination">
-									<!--<a href="#" class="previous">Prev</a>-->
-									<a href="#" class="page active">1</a>
-									<a href="#" class="page">2</a>
-									<a href="#" class="page">3</a>
-									<span class="extra">&hellip;</span>
-									<a href="#" class="page">8</a>
-									<a href="#" class="page">9</a>
-									<a href="#" class="page">10</a>
-									<a href="#" class="next">Next</a>
-								</div>
-							</footer>
+            <!-- Project 1 -->
+            <div class="projects-box">
+                <div class="project-image">
+                    <img src="images/project/1st project portfolio.png" alt="Preview">
+                </div>
+                <h3>Portfolio Website</h3>
+                <p>A portfolio reflecting my passion and journey thorugh my personal and professional growth.</p>
+                <div class="projects-icon">
+                    <i class='bx bx-book-content'></i>
+                    <a href="#"><i class='bx bxl-github' ></i><span>View Github</span></a>
+                    <a href="#"><i class='bx bx-chevron-right'></i> <span>View Project</span></a>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="projects-box">
+                <div class="project-image">
+                    <img src="images/project/2nd project sentiment analysis.png" alt="Preview">
+                </div>
+                <h3>Twitter Sentiment Analysis of ODL</h3>
+                <p>Analyzes the sentiment of tweets about Open Distance Learning (ODL) using natural language processing and machine learning algorithms.</p>
+                <button class="read-more-btn">See more..</button>
+                <div class="projects-icon">
+                    <a href="https://github.com/haikalfitri/Twitter-Sentiment-Analysis-ODL"><i class='bx bxl-github' ></i><span>View Github</span></a>
+                    <a href="assets/Sentiment Analysis - ODL.pdf"><i class='bx bx-chevron-right'></i><span>View Project</span></a>
+                </div>
+            </div>
 
-					</div>
+            <!-- Project 3 -->
+            <div class="projects-box">
+                <div class="project-image">
+                    <img src="images/project/3rd project fm24 analysis.png" alt="Preview">
+                </div>
+                <h3>FM24: Wonderkid Recruiting Analysis</h3>
+                <p>Data-driven analysis of recruiting wonderkids in Football Manager (FM) simulation game to identify top young talent.</p>
+                <button class="read-more-btn">See more..</button>
+                <div class="projects-icon">
+                    <a href="https://github.com/haikalfitri/Football-Manager-24-Analysis"><i class='bx bxl-github' ></i><span>View Github</span></a>
+                    <a href="https://public.tableau.com/views/FMWonderkidDashboard/WonderkidsRegions?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"><i class='bx bx-chevron-right' ></i><span>View Project</span></a>
+                </div>
+            </div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>1234 Somewhere Road #87257<br />
-								Nashville, TN 00000-0000</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">info@untitled.tld</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+            <!-- Project 4 -->
+            <div class="projects-box">
+                <div class="project-image">
+                    <img src="images/project/4th project covid 19 early analysis.png" alt="Preview">
+                </div>
+                <h3>Covid-19 Data Insights</h3>
+                <p>The analysis delves into data cleaning, exploration, and visualization to reveal trends in   regional, and continental cases and deaths.</p>
+                <button class="read-more-btn">See more..</button>
+                <div class="projects-icon">
+                    <a href="https://github.com/haikalfitri/COVID-19-Data-Insights-Cases-Deaths-and-Vaccinations"><i class='bx bxl-github' ></i><span>View Github</span></a>
+                    <a href="assets/Covid-19 Insights.pdf"><i class='bx bx-chevron-right' ></i><span>View Project</span></a>
+                </div>
+            </div>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+            <!-- Project 5 -->
+            <div class="projects-box">
+                <div class="project-image">
+                    <img src="images/project/5th project careit figma.png" alt="Preview">
+                </div>
+                <h3>CareIT</h3>
+                <p>A simple, responsive Figma prototype designed to enhance user experience for mental health support.</p>
+                <div class="projects-icon">
+                    <a href="https://github.com/haikalfitri/COVID-19-Data-Insights-Cases-Deaths-and-Vaccinations"><i class='bx bxl-github' ></i><span>View Github</span></a>
+                    <a href="assets/Covid-19 Insights.pdf"><i class='bx bx-chevron-right' ></i><span>View Project</span></a>
+                </div>
+            </div>
 
-			</div>
+            <!-- Project 6 -->
+            <div class="projects-box">
+                <div class="project-image">
+                    <img src="images/project/6th gui employe crud.png" alt="Preview">
+                </div>
+                <h3>Employer Record CRUD Operations</h3>
+                <p>Developed a simple CRUD application using Java Swing for managing employee records, with functionality for creating, reading, updating, and deleting employee data, and file operations for saving and loading data.</p>
+                <button class="read-more-btn">See more..</button>
+                <div class="projects-icon">
+                    <a href="https://github.com/haikalfitri/Employees-Record-CRUD"><i class='bx bxl-github' ></i><span>View Github</span></a>
+                </div>
+            </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+            <!-- Project 7 -->
+            <div class="projects-box">
+                <div class="project-image">
+                    <img src="images/project/7th project todocli.png" alt="Preview">
+                </div>
+                <h3>ToDoList CLI</h3>
+                <p>This is a simple Java application that allows users to manage their tasks using a command-line interface. With this application, users can add new tasks, remove current tasks, and view the current list of tasks created.</p>
+                <button class="read-more-btn">See more..</button>
+                <div class="projects-icon">
+                    <a href="https://github.com/haikalfitri/ToDoList_CLI"><i class='bx bxl-github' ></i><span>View Github</span></a>
+                </div>
+            </div>
 
-	</body>
+
+            <div class="projects-box">
+                <h3>Mentorship Contractual Analysis</h3>
+                <p>Analyzed mentorship contractual data to provide insights for enhancing the mentorship program. Key tasks included identifying mentorship stages and recommending improvements based on findings.</p>
+                <h4>Tools Used:</h4>
+                <ul>
+                    <li><strong>Microsoft Forms:</strong> Collected survey data.</li>
+                    <li><strong>Excel:</strong> Applied advanced data analysis technique.</li>
+                    <li><strong>Power BI:</strong> Developed interactive reports.</li>
+                </ul>
+            </div>
+            
+            <div class="projects-box">
+                <h3>Lean Six Sigma Projects</h3>
+                <div class="project-content">
+                    <h4>Fuel Recoupment Project</h4>
+                    <p>Analyzed and reported on process flows, achieving a 70% reduction in lead time and saving 4,000 manhours.</p>
+                    
+                    <h4>Vessel Tracking System (VTS)</h4>
+                    <p>Managed reporting, contributing to a 25% improvement in lead time and saving 71,280 manhours.</p>
+                    
+                    <h4>Fuel Benchmarking</h4>
+                    <p>Contributed to data analysis, identifying opportunities for process improvements.</p>
+                </div>
+                <button class="read-more-btn">See more</button>
+            </div>
+            
+            
+            
+            
+            
+            
+
+        </div>
+     </section>
+
+    <!-- Resume Section -->
+     <section class="resume">
+        <div class="resume-container">
+            <div class="resume-box">
+                <h2>Why Hire Me?</h2>
+                <p class="desc">Lorem  dolor sit, amet consectetur adipisicing elit.</p>
+                <button class="resume-btn active">Experience</button>
+                <button class="resume-btn">Education</button>
+                <button class="resume-btn">Skills</button>
+                <button class="resume-btn">About Me</button>
+            </div>
+
+            <div class="resume-box">
+                <div class="resume-detail experience active">
+                    <h2 class="heading">My <span>Experience</span></h2>
+                    <p class="desc">Lorem  dolor sit, amet consectetur adipisicing elit. </p>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <p class="year">2023-Present</p>
+                            <h3>Petronas GEES</h3>
+                            <p class="company">Petronas Carigali Sdn Bhd</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis libero quasi magni adipisci m</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2022-2024</p>
+                            <h3>Petronas GEES 2</h3>
+                            <p class="company">Petronas Carigali Sdn Bhd 2</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis libero quasi magni adipisci m</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2021-2024</p>
+                            <h3>Petronas GEES 3</h3>
+                            <p class="company">Petronas Carigali Sdn Bhd 4</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis libero quasi magni adipisci m</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-detail education">
+                    <h2 class="heading">My <span>Education</span></h2>
+                    <p class="desc">Lorem  dolor sit, amet consectetur adipisicing elit. </p>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <p class="year">2019 - 2023</p>
+                            <h3>Bachelor of Information System - Intelligent System Engineering</h3>
+                            <p class="company">UITM Shah Alam</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis libero quasi magni adipisci m</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2018-2019</p>
+                            <h3>Program Satu Tahun (PST) - Science Stream </h3>
+                            <p class="company">Kelantan Matriculation College</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis libero quasi magni adipisci m</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2013-2017</p>
+                            <h3>Secondary School</h3>
+                            <p class="company">SMK Bachok</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis libero quasi magni adipisci m</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-detail skills">
+                    <h2 class="heading">My <span>Skills</span></h2>
+                    <p class="desc">Lorem  dolor sit, amet consectetur adipisicing elit. </p>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <i class='bx bx-analyse' ></i>
+                            <span>Data Analytic</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bx-analyse' ></i>
+                            <span>Database Management System</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bx-error-circle' ></i>
+                            <span>Problem Solving</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bx-check-shield'></i>
+                            <span>Integrity</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bx-trending-up' ></i>
+                            <span>Adaptability</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-detail about ">
+                    <h2 class="heading">About <span>Me</span></h2>
+                    <p class="desc">Lorem  dolor sit, amet consectetur adipisicing elit. </p>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <p>Name<span>Haikal Fitri</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Gender<span>Male</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Age<span>25 Years Old</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Address<span>Bachok, Kelantan (Willing to Relocate)</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Nationality<span>Malaysian</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Availability<span>Open to Work</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Phone<span>+60 111 932 9198</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Email<span>muhdhaikalfitri.hassim@gmail.com</span></p>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+     </div>
+     </section>
+
+    <!-- Portfolio Section -->
+     <section class="portfolio">
+        <h2 class="heading">Latest<span>Project</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <div class="portfolio-detail active">
+                    <p class="number">01</p>
+                    <h3>Frontend Project</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, inventore.</p>
+                    <div class="tech">
+                        <p>HTML, CSS, js</p>
+                    </div>
+                    <div class="live-github">
+                        <a href="#"><i class='bx bx-arrow-back' ></i><span>Live Project</span></a>
+                        <a href="#"><i class='bx bxl-github' ></i><span>Github Repository</span></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-detail">
+                    <p class="number">02</p>
+                    <h3>Backend Project</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, inventore.</p>
+                    <div class="tech">
+                        <p>TOLELELEELELE</p>
+                    </div>
+                    <div class="live-github">
+                        <a href="#"><i class='bx bx-arrow-back' ></i><span>Live Project</span></a>
+                        <a href="#"><i class='bx bxl-github' ></i><span>Github Repository</span></a>
+                    </div>
+                </div>
+                <div class="portfolio-detail">
+                    <p class="number">03</p>
+                    <h3>Individua Project</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, inventore.</p>
+                    <div class="tech">
+                        <p>Balatroo</p>
+                    </div>
+                    <div class="live-github">
+                        <a href="#"><i class='bx bx-arrow-back' ></i><span>Live Project</span></a>
+                        <a href="#"><i class='bx bxl-github' ></i><span>Github Repository</span></a>
+                    </div>
+                </div>
+                <div class="portfolio-detail">
+                    <p class="number">04</p>
+                    <h3>MC Analytic</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, inventore.</p>
+                    <div class="tech">
+                        <p>Sugoiii</p>
+                    </div>
+                    <div class="live-github">
+                        <a href="#"><i class='bx bx-arrow-back' ></i><span>Live Project</span></a>
+                        <a href="#"><i class='bx bxl-github' ></i><span>Github Repository</span></a>
+                    </div>
+                </div>
+                <div class="portfolio-detail">
+                    <p class="number">05</p>
+                    <h3>Victut</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, inventore.</p>
+                    <div class="tech">
+                        <p>Paramelicius</p>
+                    </div>
+                    <div class="live-github">
+                        <a href="#"><i class='bx bx-arrow-back' ></i><span>Live Project</span></a>
+                        <a href="#"><i class='bx bxl-github' ></i><span>Github Repository</span></a>
+                    </div>
+                </div>
+                <div class="portfolio-detail">
+                    <p class="number">06</p>
+                    <h3>Mohamada</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, inventore.</p>
+                    <div class="tech">
+                        <p>joinker</p>
+                    </div>
+                    <div class="live-github">
+                        <a href="#"><i class='bx bx-arrow-back' ></i><span>Live Project</span></a>
+                        <a href="#"><i class='bx bxl-github' ></i><span>Github Repository</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <div class="portfolio-carousel">
+                    <div class="img-slide">
+                        <div class="img-item">
+                            <img src="images/portfolio 1.png">
+                        </div>
+                        <div class="img-item">
+                            <img src="images/portfolio 2.png">
+                        </div>
+                        <div class="img-item">
+                            <img src="images/portfolio 3.png">
+                        </div>
+                        <div class="img-item">
+                            <img src="images/portfolio 4.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <button class="arrow-left disabled"><i class='bx bx-chevron-left' ></i></button>
+                    <button class="arrow-right"><i class='bx bx-chevron-right' ></i></button>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- Contact Section -->
+     <section class="contact">
+        <div class="contact-container">
+            <div class="contact-box">
+                <h2>Let's Work Together</h2>
+                <p class="desc">lorem ipsum sukoimake niko ni kuala lumpur</p>
+                <div class="contact-detail">
+                    <i class='bx bx-phone-call' ></i>
+                    <div class="detail">
+                    <p>Phone</p>
+                    <p>+60 111 932 9198</p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <i class='bx bx-envelope' ></i>
+                    <div class="detail">
+                    <p>Email</p>
+                    <p>muhdhaikalfitri.hassim@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <i class='bx bx-map' ></i>
+                    <div class="detail">
+                    <p>Address</p>
+                    <p>Bachok, Kelantan</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contact-box">
+                <form action="">
+                    <h2 class="heading">Contact <span>ME!</span></h2>
+                    <div class="field-box">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="text"  placeholder="Phone Number" required>
+                        <input type="text"  placeholder="Subject" required>
+                        <textarea name="" id="" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+     </section>
+
+    <!-- custom js -->
+    <script src="javascript/script.js"></script>
+</body>
+
 </html>
