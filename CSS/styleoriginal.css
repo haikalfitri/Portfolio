@@ -374,13 +374,10 @@ section.active {
     max-height: 25rem; /* Adjust to fit your desired collapsed height */
 }
 
-
-
 .projects-box .project-content.expanded {
     max-height:max-content  ; /* No max-height when expanded */
     visibility: visible;
 }
-
 
 .projects-box h4 {
     font-size: 1.4rem; /* Adjust the font size */
@@ -412,9 +409,6 @@ section.active {
 .projects-box:hover h4 {
     color: var(--main-color); /* Change color to main color when hovering over the project box */
 }
-
-
-
 
 .projects-container .projects-box p.expanded {
     display: block;
@@ -554,8 +548,8 @@ section.active {
     font-size: 1.6rem;
 }
 
-/* page 3 - resume */
 
+/* page 3 - resume */
 .resume-container{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -628,13 +622,13 @@ section.active {
 
 .resume-list .resume-item{
     background: var(--second-bg-color);
-    border-radius: 0.8rem;
-    padding: 3rem 2.5rem;
-    height: calc((45 rem - 2rem) / 2);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    border-radius: 0.75rem;
+    padding: 3rem 2rem;
+    justify-self:end; 
+    position: relative; 
+    height: 85%;
 }
+
 
 .resume-item .year{
     color: var(--main-color);

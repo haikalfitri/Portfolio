@@ -374,13 +374,10 @@ section.active {
     max-height: 25rem; /* Adjust to fit your desired collapsed height */
 }
 
-
-
 .projects-box .project-content.expanded {
     max-height:max-content  ; /* No max-height when expanded */
     visibility: visible;
 }
-
 
 .projects-box h4 {
     font-size: 1.4rem; /* Adjust the font size */
@@ -412,9 +409,6 @@ section.active {
 .projects-box:hover h4 {
     color: var(--main-color); /* Change color to main color when hovering over the project box */
 }
-
-
-
 
 .projects-container .projects-box p.expanded {
     display: block;
@@ -554,8 +548,8 @@ section.active {
     font-size: 1.6rem;
 }
 
-/* page 3 - resume */
 
+/* page 3 - resume */
 .resume-container{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -628,7 +622,7 @@ section.active {
 
 .resume-list .resume-item{
     background: var(--second-bg-color);
-    border-radius: 0.8rem;
+    border-radius: 0.75rem;
     padding: 3rem 2.5rem;
     height: calc((45 rem - 2rem) / 2);
     display: flex;
@@ -641,8 +635,70 @@ section.active {
 }
 
 .resume-item h3{
-    font-size: 2.2rem;
+    font-size: 2.1rem;
 }
+
+.resume-detail.experience .resume-list::-webkit-scrollbar{
+    display: none;
+}
+
+.resume-detail.experience .resume-item{
+    background: var(--second-bg-color);
+    border-radius: 0.75rem;
+    padding: 3rem 2rem;
+    justify-self:end; 
+    position: relative; 
+    height: 38rem;
+    transition: 1s;
+    box-sizing: border-box;
+    border: 0.2rem solid var(--second-bg-color); 
+    overflow: visible; 
+    margin: 0.5rem; 
+
+}
+
+.resume-detail.experience .resume-item:hover{
+    border-color: var(--main-color);
+    transform: scale(1.01);
+    margin: 0.5rem; 
+}
+
+
+
+.resume-detail.experience .resume-item p{
+    color: var(--main-color);
+    transition: opacity 0.3s ease, visibility 0.3s ease; 
+}
+
+.resume-detail.education .resume-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    height: 45rem;
+    width: 100%;
+    overflow: auto;
+}
+
+.resume-detail.education .resume-item{
+    background: var(--second-bg-color);
+    border-radius: 0.75rem;
+    padding: 3rem 4rem;
+    justify-self:end; 
+    position: relative; 
+    height: auto;
+    transition: 1s;
+    box-sizing: border-box;
+    border: 0.2rem solid var(--second-bg-color); 
+    margin: 0.5rem;
+}
+
+.resume-detail.education .resume-item:hover{
+    border-color: var(--main-color);
+    transform: scale(1.02);
+    transform-origin: center; /* Scale from the center to avoid clipping */
+    margin: 0.5rem; /* Prevent clipping on hover */
+}
+
 
 .resume-item .company{
     position: relative;
@@ -661,45 +717,80 @@ section.active {
     margin-left: -2rem;
 }
 
-.resume-detail.skills .resume-list{
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    height: auto;
-    overflow: visible;
+    /*/* Parent container of skills (categories) */
+.resume-detail.skills .resume-list {
+    display: flex;
+    flex-direction: column; /* Stack categories vertically */
+    gap: 3rem; /* Add space between categories */
+    padding: 2rem 0;
 }
 
-.resume-detail.skills .resume-item{
-    position: relative;
-    align-items: center;
-    height: auto;
+/* Each category will be stacked vertically */
+.resume-detail.skills .category-skill {
+    display: flex;
+    flex-direction: column; /* Stack h3 and resume-list vertically */
+    gap: 1rem; /* Space between h3 and the resume list */
 }
 
-.resume-detail.skills .resume-item i {
-    font-size: 8.5rem;
-    transition: 0.5s;
-}
-
-.resume-detail.skills .resume-item:hover i{
+/* Title for each category */
+.resume-detail.skills .category-skill h3 {
+    font-size: 2rem;
     color: var(--main-color);
+    font-weight: 700;
+    margin-bottom: 1rem; /* Add some spacing below the title */
 }
 
-.resume-detail.skills .resume-item span{
-    position: absolute;
-    top: -20%;
-    background: var(--white-color);
-    color: var(--bg-color);
+/* Items inside each category displayed horizontally */
+.resume-detail.skills .category-skill .resume-list {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items to the next line if they overflow */
+    gap: 1.5rem; /* Space between items */
+    flex-direction: row; /* Align items in a row */
+}
+
+/* Style for individual items (resume-item) */
+.resume-detail.skills .resume-item {
+    background: var(--second-bg-color);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 15rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hover effect for each resume-item */
+.resume-detail.skills .resume-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border: 0.2rem solid var(--main-color);
+}
+
+/* Style for icons in each resume-item */
+.resume-detail.skills .resume-item i {
+    font-size: 4.5rem;
+    color: var(--main-color);
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for icons */
+.resume-detail.skills .resume-item:hover i {
+    color: var(--white-color);
+}
+
+/* Style for the skill label */
+.resume-detail.skills .resume-item span {
+    display: block;
+    margin-top: 1rem;
     font-size: 1.6rem;
-    padding: 0.5rem 1rem;
-    border-radius: 0.6rem;
-    pointer-events: none;
-    opacity: 0;
-    transform: scale(0.9);
-    transition: 0.2s;
+    color: var(--main-color);
+    font-weight: 500;
 }
 
-.resume-detail.skills .resume-item:hover span{
-    opacity: 1;
-    transform: scale(1);
-}
 
 .resume-detail.about .resume-list{
     height: auto;
