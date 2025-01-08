@@ -10,12 +10,24 @@
     font-family: "Poppins", serif;
 }
 
+.portfolio,
+.contact
+{
+    display: none;
+}
+
+header nav a:nth-child(4), 
+header nav a:nth-child(5) {
+    display: none;
+}
+
+
 :root{
-    --bg-color: #191c23 ; /* Very dark blue-gray background for a high-tech feel */
-    --second-bg-color: #1e2a34; /* Slightly lighter dark background for sections */
-    --main-color: #00ffcc   ; /* Bright cyan as a futuristic accent color */
-    --white-color: #eaeaea; /* Soft white-gray for readable text and clean contrast */
-    --disabled-color: #eae7c8; /* Muted gray for disabled states */
+    --bg-color: #191c23; 
+    --second-bg-color: #1e2a34; 
+    --main-color: #00ffcc; 
+    --white-color: #eaeaea; 
+    --disabled-color: #eae7c8; 
 }
 
 html{
@@ -30,8 +42,6 @@ html, body {
     height: 100%;
     margin: 0;
 }
-
-
 
 header{
     position: fixed;
@@ -50,9 +60,8 @@ header{
 
 header.active {
     animation: show-header 1.5s linear forwards;
-    animation-delay: 0.5s; /* Reduced delay for a smoother transition */
+    animation-delay: 0.5s; 
 }
-
 @keyframes show-header {
     100% {
         visibility: visible;
@@ -84,7 +93,7 @@ nav a.active {
     display: none;
 }
 
-/* Bars Animation */
+/* Page Transition */
 .bars-box{
     position: absolute;
     width: 100%;
@@ -132,14 +141,14 @@ section {
     visibility: hidden;
     opacity: 0;
     overflow: auto;
-    transform: translateY(10%); /* Start with a small downward offset */
-    transition: opacity 1.5s ease, transform 1.5s ease; /* Smooth transition */
+    transform: translateY(10%); 
+    transition: opacity 1.5s ease, transform 1.5s ease; 
 }
 
 section.active {
     visibility: visible;
     opacity: 1;
-    transform: translateY(0); /* Move into position */
+    transform: translateY(0); 
 
 }
 @keyframes show-home {
@@ -245,7 +254,7 @@ section.active {
     color: var(--main-color);
     margin: 0.8rem;
     transition: 0.5s;
-    position: relative; /* This is needed for absolute positioning of the span */
+    position: relative;
 
 }
 
@@ -272,7 +281,6 @@ section.active {
     visibility: visible;
 }
 
-
 .home-detail .btn-sci .sci a:hover{
     background: var(--main-color);
     color: var(--bg-color);
@@ -282,22 +290,22 @@ section.active {
 /* Profile Picture */
 .home-img {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh; /* Full viewport height */
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
 }
 
 .home-img .img-box {
     position: relative;
-    width: 25vw; /* Adjust based on desired width */
-    height: 25vw; /* Adjust for proportional height */
-    border-radius: 50%; /* Rounded corners */
-    padding: 0.5rem; /* Padding for a cleaner border effect */
+    width: 25vw; 
+    height: 25vw; 
+    border-radius: 50%; 
+    padding: 0.5rem; 
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-color: var(--bg-color); /* Optional background */
+    background-color: var(--bg-color); 
     perspective: 1500px;
     margin-left: 12rem;
     margin-bottom: 2rem;
@@ -308,12 +316,12 @@ section.active {
     width: 100%;
     height: 100%;
     background: var(--bg-color);
-    border-radius: 50%; /* Rounded corners for the inner container */
+    border-radius: 50%; 
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 15px var(--main-color); /* Subtle shadow for depth */
-    transform-origin: center center; /* Ensures zoom is from the center */
+    box-shadow: 0 0 15px var(--main-color); 
+    transform-origin: center center; 
 }
 
 .home-img .img-box .img-item img {
@@ -321,14 +329,14 @@ section.active {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image fits the box without distortion */
-    border-radius: 50%; /* Match the circular border */
+    object-fit: cover; 
+    border-radius: 50%; 
     z-index: 1;
-    transition: transform 3s step-end; /* Slow zoom effect */
+    transition: transform 3s step-end; 
 }
 
-/*Page 2 - Projects*/
 
+/*Page 2 - Projects*/
 .heading{
     font-size: 4rem;
     text-align: center;
@@ -371,43 +379,43 @@ section.active {
 .projects-box .project-content {
     display: block;
     overflow: hidden;
-    max-height: 25rem; /* Adjust to fit your desired collapsed height */
+    max-height: 25rem; 
 }
 
 .projects-box .project-content.expanded {
-    max-height:max-content  ; /* No max-height when expanded */
+    max-height:max-content  ; 
     visibility: visible;
 }
 
 .projects-box h4 {
-    font-size: 1.4rem; /* Adjust the font size */
-    font-weight: bold; /* Make it bold */
-    color: var(--main-color); /* Change text color (use your custom variable) */
-    margin-top: 1rem; /* Add some space on top */
-    margin-bottom: 1rem; /* Optional: Add space at the bottom */
+    font-size: 1.4rem; 
+    font-weight: bold; 
+    color: var(--main-color); 
+    margin-top: 1rem; 
+    margin-bottom: 1rem; 
 }
 
 .projects-box ul {
-    list-style-type: none;  /* Remove default list bullets */
-    padding-left: 0;        /* Remove left padding */
+    list-style-type: none;  
+    padding-left: 0;        
 }
 
 .projects-box ul li {
-    margin-bottom: 1rem;    /* Add space between list items */
-    font-size: 1.4rem;      /* Increase font size for readability */
-    line-height: 1.6;       /* Improve line spacing */
+    margin-bottom: 1rem;   
+    font-size: 1.4rem;      
+    line-height: 1.6;       
 }
 
 .projects-box ul li strong,
 .projects-box h4 {
-    font-weight: bold;      /* Make the tool names and h4 text bold */
-    color: white;           /* Set initial color to white */
+    font-weight: bold;      
+    color: white;         
     transition: opacity 0.3s ease, visibility 0.3s ease; 
     }
 
 .projects-box:hover ul li strong,
 .projects-box:hover h4 {
-    color: var(--main-color); /* Change color to main color when hovering over the project box */
+    color: var(--main-color);
 }
 
 .projects-container .projects-box p.expanded {
@@ -437,7 +445,6 @@ section.active {
     transform: scale(1.02);
 }
 
-/* Style the container for the image */
 .projects-box .project-image {
     width: 100%; 
     max-height: 200px; 
@@ -450,21 +457,18 @@ section.active {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Style the image itself */
 .projects-box .project-image img {
-    width: 100%; /* Let the image fill the container */
-    height: auto; /* Maintain the image's aspect ratio */
-    max-height: 100%; /* Prevent the image from exceeding container height */
-    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    width: 100%; 
+    height: auto; 
+    max-height: 100%; 
+    object-fit: cover; 
     transform: translateX(0);
     transition: transform 1s ease-in-out;
 }
 
-
 .projects-box .project-image img:hover {
-    transform: translateX(-6px); /* Slight move on hover */
+    transform: translateX(-6px); 
 }
-
 
 .projects-box .projects-icon{
     display: flex;
@@ -474,7 +478,6 @@ section.active {
     bottom: 1rem;
     right: 1rem;
     width: 100%;
-    
 }
 
 .projects-box .projects-icon i{
@@ -516,7 +519,7 @@ section.active {
 }
 
 .projects-box .projects-icon a:hover span {
-    display: block; /* Show on hover */
+    display: block;
     opacity: 1;
     visibility: visible;
     color:black;   
@@ -549,7 +552,7 @@ section.active {
 }
 
 
-/* page 3 - resume */
+/* Page 3 - Resume */
 .resume-container{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -623,20 +626,81 @@ section.active {
 .resume-list .resume-item{
     background: var(--second-bg-color);
     border-radius: 0.75rem;
-    padding: 3rem 2rem;
-    justify-self:end; 
-    position: relative; 
-    height: 85%;
+    padding: 3rem 2.5rem;
+    height: calc((45 rem - 2rem) / 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-
 
 .resume-item .year{
     color: var(--main-color);
 }
 
 .resume-item h3{
-    font-size: 2.2rem;
+    font-size: 2.1rem;
 }
+
+.resume-detail.experience .resume-list::-webkit-scrollbar{
+    display: none;
+}
+
+.resume-detail.experience .resume-item{
+    background: var(--second-bg-color);
+    border-radius: 0.75rem;
+    padding: 3rem 2rem;
+    justify-self:end; 
+    position: relative; 
+    height: 38rem;
+    transition: 1s;
+    box-sizing: border-box;
+    border: 0.2rem solid var(--second-bg-color); 
+    overflow: visible; 
+    margin: 0.5rem; 
+}
+
+.resume-detail.experience .resume-item:hover{
+    border-color: var(--main-color);
+    transform: scale(1.01);
+    margin: 0.5rem; 
+}
+
+
+
+.resume-detail.experience .resume-item p{
+    color: var(--main-color);
+    transition: opacity 0.3s ease, visibility 0.3s ease; 
+}
+
+.resume-detail.education .resume-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    height: 45rem;
+    width: 100%;
+    overflow: auto;
+}
+
+.resume-detail.education .resume-item{
+    background: var(--second-bg-color);
+    border-radius: 0.75rem;
+    padding: 3rem 4rem;
+    justify-self:end; 
+    position: relative; 
+    height: auto;
+    transition: 1s;
+    box-sizing: border-box;
+    border: 0.2rem solid var(--second-bg-color); 
+    margin: 0.5rem;
+}
+
+.resume-detail.education .resume-item:hover{
+    border-color: var(--main-color);
+    transform: scale(1.02);
+    transform-origin: center; 
+    margin: 0.5rem; 
+}
+
 
 .resume-item .company{
     position: relative;
@@ -655,44 +719,85 @@ section.active {
     margin-left: -2rem;
 }
 
-.resume-detail.skills .resume-list{
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    height: auto;
-    overflow: visible;
+.resume-detail.skills .resume-list {
+    display: flex;
+    flex-direction: column; 
+    gap: 2rem; 
+    padding: 2rem 0 ;
+    margin-top:1.5rem;
 }
 
-.resume-detail.skills .resume-item{
-    position: relative;
+.resume-detail.skills .category-skill {
+    display: flex;
+    flex-direction: column; 
+    gap: 0.5rem; 
+    margin-bottom: -2.5rem;
+}
+
+.resume-detail.skills .category-skill h3 {
+    font-size: 2rem;
+    color: var(--main-color);
+    font-weight: 700;
+    margin-bottom: 1rem; 
+    margin-top: -2rem;
+}
+
+.resume-detail.skills .category-skill h3 .firstw {
+    font-size: 2rem;
+    color: var(--white-color);
+    font-weight: 700;
+    margin-bottom: 1rem; 
+    margin-top: -2rem;
+}
+
+.resume-detail.skills .category-skill .resume-list {
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    gap: 0rem 1rem;
+    column-gap: 1.5rem; 
+    row-gap: 0.2rem; 
+    height: 400px;
+    margin-top: -20px;
+}
+
+
+.resume-detail.skills .resume-item {
+    background: var(--second-bg-color);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 14rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    height: auto;
+}
+
+.resume-detail.skills .resume-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border: 0.2rem solid var(--main-color);
 }
 
 .resume-detail.skills .resume-item i {
-    font-size: 8.5rem;
-    transition: 0.5s;
-}
-
-.resume-detail.skills .resume-item:hover i{
+    font-size: 4.5rem;
     color: var(--main-color);
+    transition: color 0.3s ease;
 }
 
-.resume-detail.skills .resume-item span{
-    position: absolute;
-    top: -20%;
-    background: var(--white-color);
-    color: var(--bg-color);
+.resume-detail.skills .resume-item:hover i {
+    color: var(--white-color);
+}
+
+.resume-detail.skills .resume-item span {
+    display: block;
+    margin-top: 1rem;
     font-size: 1.6rem;
-    padding: 0.5rem 1rem;
-    border-radius: 0.6rem;
-    pointer-events: none;
-    opacity: 0;
-    transform: scale(0.9);
-    transition: 0.2s;
-}
-
-.resume-detail.skills .resume-item:hover span{
-    opacity: 1;
-    transform: scale(1);
+    color: var(--main-color);
+    font-weight: 500;
 }
 
 .resume-detail.about .resume-list{
@@ -1010,7 +1115,7 @@ section.active {
     }
 
     .portfolio-container .portfolio-box:first-child{
-        order: 1; /*order the first column*/
+        order: 1;
     }
 
     .contact-box .field-box{
@@ -1060,4 +1165,5 @@ section.active {
     .contact-box h2{
         font-size: 3.5rem;
     }
+}
 }
