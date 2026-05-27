@@ -77,7 +77,7 @@ navLinks.forEach((link, idx) => {
 });
 
 logoLinks.addEventListener('click', () => {
-    if (!navLinks(0).classList.contains('active')) {
+    if (!navLinks[0].classList.contains('active')) {
         activePage();
         navLinks[0].classList.add('active');
 
@@ -123,12 +123,12 @@ const activePortfolio = ()  => {
 }
 
 arrowRight.addEventListener('click', () => {
-    if (index < 2) {
+    if (index < 5) {
         index++;
         arrowLeft.classList.remove('disabled');
     }
     else {
-        index = 3; /*based on how many projects*/ 
+        index = 5;
         arrowRight.classList.add('disabled');
     }
 
