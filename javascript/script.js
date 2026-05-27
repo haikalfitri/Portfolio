@@ -6,25 +6,12 @@ const navBar = document.querySelector('header nav');
 
 document.querySelectorAll('.read-more-btn').forEach(button => {
     button.addEventListener('click', function () {
-        const description = this.previousElementSibling; // Select the <p> element
-        if (description.classList.contains('expanded')) {
-            description.classList.remove('expanded');
+        const target = this.previousElementSibling;
+        if (target.classList.contains('expanded')) {
+            target.classList.remove('expanded');
             this.textContent = 'See more';
         } else {
-            description.classList.add('expanded');
-            this.textContent = 'See less';
-        }
-    });
-});
-
-document.querySelectorAll('.read-more-btn').forEach(button => {
-    button.addEventListener('click', function () {
-        const description = this.previousElementSibling.querySelector('.project-content'); // Get the .project-content div
-        if (description.classList.contains('expanded')) {
-            description.classList.remove('expanded');
-            this.textContent = 'See more';
-        } else {
-            description.classList.add('expanded');
+            target.classList.add('expanded');
             this.textContent = 'See less';
         }
     });
