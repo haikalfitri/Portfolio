@@ -30,17 +30,14 @@
 
 html{
     font-size: 65%;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
 body{
     color: var(--white-color);
     background: var(--bg-color);
     overflow-x: hidden;
-}
-
-html, body {
-    height: 100%;
-    margin: 0;
 }
 
 /* ============ AMBIENT BLOB BACKGROUND ============ */
@@ -182,70 +179,15 @@ nav a.active {
     border-radius: 50%;
 }
 
-/* ============ PAGE TRANSITION ============ */
-.bars-box{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    z-index: 1;
-    pointer-events: none;
-}
-
-.bars-box .bar{
-    width: 100%;
-    height: 100%;
-    background: var(--bg-color);
-    animation: hide-bars 0.5s ease-in-out both;
-    animation-delay: calc(0.1s * var(--i));
-}
-
-@keyframes hide-bars{
-    0%{ transform: translateY(0); }
-    100%{ transform: translateY(-100%); }
-}
-
-.bars-box.active .bar{
-    animation: show-bars 0.5s ease-in-out both;
-    animation-delay: calc(0.1s * var(--i));
-}
-
-@keyframes show-bars{
-    0%{ transform: translateY(-100%); }
-    100%{ transform: translateY(0); }
-}
-
 /* ============ SECTIONS ============ */
 section {
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     padding: 12rem 5% 4rem;
-    visibility: hidden;
-    opacity: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-    transform: translateY(10%);
-    transition: opacity 1.2s ease, transform 1.2s ease;
-    z-index: 2;
+    scroll-snap-align: start;
     background: var(--bg-color);
 }
-
-section.active {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-    z-index: 5;
-}
-
-section::-webkit-scrollbar { width: 0.6rem; }
-section::-webkit-scrollbar-track { background: transparent; }
-section::-webkit-scrollbar-thumb { background: var(--glass-border); border-radius: 1rem; }
-section:hover::-webkit-scrollbar-thumb { background: var(--main-color); }
 
 /* ============ SECTION HEADING ============ */
 .heading{
