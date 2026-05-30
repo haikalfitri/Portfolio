@@ -11,12 +11,12 @@
 }
 
 :root{
-    --bg-color: #191c23;
-    --second-bg-color: #1e2a34;
+    --bg-color: #0d1b2a;
+    --second-bg-color: #112233;
     --main-color: #00ffcc;
     --white-color: #eaeaea;
     --disabled-color: #eae7c8;
-    --glass: rgba(30, 42, 52, 0.55);
+    --glass: rgba(13, 27, 42, 0.55);
     --glass-border: rgba(0, 255, 204, 0.18);
     --muted: rgba(234, 234, 234, 0.62);
     --display-font: "Space Grotesk", "Poppins", sans-serif;
@@ -142,7 +142,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 0.4rem;
-    background: rgba(25, 28, 35, 0.4);
+    background: rgba(13, 27, 42, 0.4);
     padding: 0.4rem;
     border-radius: 5rem;
 }
@@ -174,7 +174,7 @@ nav a.active {
     display: none;
     color: var(--white-color);
     cursor: pointer;
-    background: rgba(25, 28, 35, 0.4);
+    background: rgba(13, 27, 42, 0.4);
     padding: 0.6rem;
     border-radius: 50%;
 }
@@ -267,7 +267,7 @@ section {
 }
 
 .archive-box {
-    background: rgba(25, 28, 35, 0.4);
+    background: rgba(13, 27, 42, 0.4);
     border: 1px solid var(--glass-border);
     border-radius: 1.4rem;
     padding: 1.6rem 1.8rem;
@@ -278,7 +278,7 @@ section {
 }
 
 .archive-box:hover {
-    background: rgba(30, 42, 52, 0.55);
+    background: rgba(17, 34, 51, 0.55);
     border-color: var(--cat-other);
     transform: translateY(-2px);
 }
@@ -776,7 +776,7 @@ section {
     align-items: center;
     justify-content: center;
     position: relative;
-    background: linear-gradient(135deg, rgba(25, 28, 35, 0.6), rgba(30, 42, 52, 0.3));
+    background: linear-gradient(135deg, rgba(13, 27, 42, 0.6), rgba(17, 34, 51, 0.3));
     border-bottom: 1px solid var(--glass-border);
     overflow: hidden;
 }
@@ -1096,7 +1096,7 @@ section {
 .resume-list:hover::-webkit-scrollbar-thumb{ background-color: var(--main-color); }
 
 .resume-list .resume-item{
-    background: rgba(25, 28, 35, 0.5);
+    background: rgba(13, 27, 42, 0.5);
     border: 1px solid var(--glass-border);
     border-radius: 1.6rem;
     padding: 2rem;
@@ -1129,7 +1129,7 @@ section {
 
 /* Experience tab */
 .resume-detail.experience .resume-item{
-    background: rgba(25, 28, 35, 0.5);
+    background: rgba(13, 27, 42, 0.5);
     border: 1px solid var(--glass-border);
     border-radius: 1.6rem;
     padding: 2rem;
@@ -1151,7 +1151,7 @@ section {
     border-color: var(--main-color);
     border-left-color: var(--main-color);
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
-    background: rgba(30, 42, 52, 0.7);
+    background: rgba(17, 34, 51, 0.7);
 }
 
 .resume-detail.experience .resume-item h3 {
@@ -1209,7 +1209,7 @@ ul.experience-bullets li::before {
 }
 
 .resume-detail.education .resume-item{
-    background: rgba(25, 28, 35, 0.5);
+    background: rgba(13, 27, 42, 0.5);
     border: 1px solid var(--glass-border);
     border-radius: 1.6rem;
     padding: 2rem;
@@ -1268,7 +1268,7 @@ ul.experience-bullets li::before {
     gap: 1rem;
     margin-bottom: 0;
     padding: 1.8rem;
-    background: rgba(25, 28, 35, 0.5);
+    background: rgba(13, 27, 42, 0.5);
     border: 1px solid var(--glass-border);
     border-radius: 1.6rem;
 }
@@ -1552,7 +1552,7 @@ ul.experience-bullets li::before {
     align-items: center;
     gap: 1rem;
     padding: 1.2rem 1.6rem;
-    background: rgba(25, 28, 35, 0.5);
+    background: rgba(13, 27, 42, 0.5);
     border: 1px solid var(--glass-border);
     border-radius: 1.2rem;
     color: var(--white-color);
@@ -1563,7 +1563,7 @@ ul.experience-bullets li::before {
 
 .contact-alt .alt-link:hover {
     border-color: var(--main-color);
-    background: rgba(25, 28, 35, 0.8);
+    background: rgba(13, 27, 42, 0.8);
     transform: translateY(-2px);
 }
 
