@@ -45,19 +45,19 @@
         <div class="home-detail">
             <span class="tag">Available for new opportunities</span>
             <h1>Haikal Fitri</h1>
-            <p>Engineer, Digital Infrastructure Support — managing virtualization, networks, and enterprise systems that keep the business running. Backed by a degree in intelligent systems engineering and hands-on experience in business analytics, I combine infrastructure depth with a data-driven approach to make IT operations more secure, reliable, and efficient.</p>
+            <p>Infrastructure engineer who keeps virtualization, networks, and Microsoft 365 running — and brings a data-driven mindset to make IT operations measurably more reliable. Backed by a degree in intelligent systems engineering and hands-on business-analytics experience.</p>
             <div class="stats">
                 <div class="stat">
-                    <span class="num">50+</span>
-                    <span class="label">Devices managed</span>
+                    <span class="num">~70</span>
+                    <span class="label">Endpoints secured</span>
                 </div>
                 <div class="stat">
-                    <span class="num">1+</span>
-                    <span class="label">Year in IT ops</span>
+                    <span class="num">Multi-site</span>
+                    <span class="label">Network (HQ + sites)</span>
                 </div>
                 <div class="stat">
-                    <span class="num">6</span>
-                    <span class="label">IT domains</span>
+                    <span class="num">Zero</span>
+                    <span class="label">Data-loss incidents</span>
                 </div>
             </div>
             <div class="btn-sci">
@@ -87,6 +87,8 @@
         <p class="section-subtitle">Professional and academic work spanning IT infrastructure, network security, virtualisation, and data analytics.</p>
         <div class="projects-container">
 
+            <h3 class="group-heading">Infrastructure &amp; Operations</h3>
+
             <!-- Infra Card A — Splashtop Enterprise Deployment -->
             <div class="projects-box cat-infra no-image">
                 <span class="cat-label">Infrastructure</span>
@@ -95,6 +97,13 @@
                 <div class="project-content">
                     <p>Led end-to-end deployment of Splashtop across the organisation. Configured access policies, enrolled devices, and trained staff — cutting remote support response time and eliminating the need for on-site visits for routine troubleshooting.</p>
                     <p><strong>Outcome:</strong> Enrolled and secured nearly 70 endpoints company-wide, enabling consistent remote support across all departments.</p>
+                    <p class="cs-divider"><strong>Case study</strong> <span class="cs-note">— sanitised</span></p>
+                    <p><strong>Context:</strong> A renewable-energy company with HQ and multiple remote sites, where routine IT support still required on-site visits. <em>[refine context]</em></p>
+                    <p><strong>Problem:</strong> No standardised remote-support tooling — troubleshooting meant travel and delays across departments.</p>
+                    <p><strong>My role:</strong> Owned the rollout end-to-end — tool selection, access-policy design, enrolment, and staff enablement.</p>
+                    <p><strong>Approach:</strong> Defined role-based access policies, enrolled endpoints in waves, enforced MFA and session logging, and ran short training sessions per department.</p>
+                    <p><strong>Outcome:</strong> ~70 endpoints secured company-wide; routine on-site visits eliminated. <em>[add the response-time delta, e.g. "first-response time cut from X to Y"]</em></p>
+                    <p><strong>Lessons:</strong> <em>[fill in — e.g. phased enrolment reduced disruption; clear policy mapping prevented over-permissioning]</em></p>
                 </div>
                 <button class="read-more-btn">See more</button>
                 <div class="tech-tags">
@@ -103,6 +112,12 @@
                     <span class="tech-tag">Endpoint Management</span>
                     <span class="tech-tag">IT Ops</span>
                 </div>
+                <!-- TODO: create the companion repo, then uncomment to wire this card.
+                <div class="projects-icon">
+                    <a href="https://github.com/haikalfitri/remote-access-deployment-playbook"><i class='bx bxl-github'></i><span>Deployment playbook</span></a>
+                    <a href="#"><i class='bx bx-sitemap'></i><span>Rollout diagram</span></a>
+                </div>
+                -->
             </div>
 
             <!-- Infra Card B — Proxmox Virtualisation -->
@@ -113,6 +128,13 @@
                 <div class="project-content">
                     <p>Managed Proxmox VE nodes — provisioning VMs and LXC containers for Active Directory and business workloads. Integrated Proxmox Backup Server with automated backups, snapshots, and replication for disaster recovery. Configured storage pools, resource monitoring, and firewall rules to secure and isolate production environments.</p>
                     <p><strong>Outcome:</strong> Maintained reliable virtualisation across multiple nodes with zero data loss through scheduled PBS backups and replication.</p>
+                    <p class="cs-divider"><strong>Case study</strong> <span class="cs-note">— sanitised</span></p>
+                    <p><strong>Context:</strong> Production virtualisation for AD and business workloads across multiple Proxmox nodes. <em>[refine — node/VM counts if shareable]</em></p>
+                    <p><strong>Problem:</strong> Workloads needed reliable provisioning, isolation, and a tested recovery path — not just backups that are assumed to work.</p>
+                    <p><strong>My role:</strong> Provisioned and maintained the VMs/LXC, designed the backup &amp; replication schedule, and owned disaster-recovery readiness.</p>
+                    <p><strong>Approach:</strong> Configured storage pools and resource monitoring, set firewall rules to isolate production, scheduled PBS backups + snapshots, and replicated between nodes.</p>
+                    <p><strong>Outcome:</strong> Zero data-loss incidents. <em>[strengthen with a documented restore test — restore time (RTO) and recovery point (RPO); see the proxmox-homelab repo for a reproducible version]</em></p>
+                    <p><strong>Lessons:</strong> <em>[fill in — e.g. an untested backup is not a backup; replication interval vs. RPO trade-off]</em></p>
                 </div>
                 <button class="read-more-btn">See more</button>
                 <div class="tech-tags">
@@ -123,6 +145,12 @@
                     <span class="tech-tag">Active Directory</span>
                     <span class="tech-tag">PBS</span>
                 </div>
+                <!-- TODO: create the companion repo, then uncomment to wire this card.
+                <div class="projects-icon">
+                    <a href="https://github.com/haikalfitri/proxmox-homelab"><i class='bx bxl-github'></i><span>Homelab repo</span></a>
+                    <a href="#"><i class='bx bx-sitemap'></i><span>Architecture diagram</span></a>
+                </div>
+                -->
             </div>
 
             <!-- Infra Card C — Network & Security Operations -->
@@ -131,8 +159,15 @@
                 <div class="icon-header"><i class='bx bx-shield-quarter'></i></div>
                 <h3>Network Infrastructure &amp; SCADA Security</h3>
                 <div class="project-content">
-                    <p>Monitored and maintained network infrastructure across HQ and multiple sites, overseeing switches, access points, IP phones, and firewall devices to ensure consistent uptime and connectivity. Conducted SCADA vulnerability assessments and infrastructure risk analysis to identify and mitigate security gaps.</p>
-                    <p><strong>Outcome:</strong> Sustained stable connectivity across HQ and remote sites while strengthening SCADA and network security posture.</p>
+                    <p>Monitored and maintained network infrastructure across HQ and multiple sites, overseeing switches, access points, IP phones, and firewall devices to ensure consistent uptime and connectivity. Supported SCADA/OT vulnerability assessments and infrastructure risk analysis, helping identify and prioritise security gaps.</p>
+                    <p><strong>Outcome:</strong> Sustained stable connectivity across HQ and remote sites while contributing to a stronger network and OT security posture.</p>
+                    <p class="cs-divider"><strong>Case study</strong> <span class="cs-note">— sanitised</span></p>
+                    <p><strong>Context:</strong> Multi-site network (HQ + remote sites) with operational-technology (SCADA) segments alongside corporate IT. <em>[refine]</em></p>
+                    <p><strong>Problem:</strong> Mixed IT/OT environments need consistent connectivity <em>and</em> clear segmentation so a corporate-side issue can't reach control systems.</p>
+                    <p><strong>My role:</strong> Maintained switches/APs/IP phones/firewalls and supported the vulnerability-assessment and risk-analysis work.</p>
+                    <p><strong>Approach:</strong> Monitored uptime across sites, maintained firewall rules, and assisted assessments of the OT/network segments. <em>[name the method/standard you actually followed — e.g. a vendor checklist, IEC 62443, or NIST 800-82 — only if accurate]</em></p>
+                    <p><strong>Outcome:</strong> Stable multi-site connectivity; prioritised list of gaps and mitigations. <em>[add a before/after or # of findings if shareable]</em></p>
+                    <p><strong>Lessons:</strong> <em>[fill in — e.g. IT/OT segmentation principles; least-privilege between segments]</em></p>
                 </div>
                 <button class="read-more-btn">See more</button>
                 <div class="tech-tags">
@@ -141,6 +176,12 @@
                     <span class="tech-tag">SCADA</span>
                     <span class="tech-tag">Security</span>
                 </div>
+                <!-- TODO: create the companion repo, then uncomment to wire this card.
+                <div class="projects-icon">
+                    <a href="https://github.com/haikalfitri/pfsense-network-lab"><i class='bx bxl-github'></i><span>Network lab repo</span></a>
+                    <a href="#"><i class='bx bx-sitemap'></i><span>Topology diagram</span></a>
+                </div>
+                -->
             </div>
 
             <!-- Infra Card D — Microsoft 365 & SharePoint Administration -->
@@ -151,14 +192,27 @@
                 <div class="project-content">
                     <p>Administered Microsoft 365 and SharePoint daily — handling user provisioning, access controls, group policies, and licensing across the organisation. Maintained secure collaboration environments and enforced role-based permissions to safeguard company data.</p>
                     <p><strong>Outcome:</strong> Streamlined identity, licensing, and access management for all staff while keeping M365 and SharePoint workspaces secure and compliant.</p>
+                    <p class="cs-divider"><strong>Case study</strong> <span class="cs-note">— sanitised</span></p>
+                    <p><strong>Context:</strong> Day-to-day identity and collaboration administration for the whole organisation on Microsoft 365 / Entra. <em>[refine — user count if shareable]</em></p>
+                    <p><strong>Problem:</strong> Access, licensing, and permissions had to stay correct and least-privilege as staff joined, moved, and left.</p>
+                    <p><strong>My role:</strong> Owned user provisioning, group/RBAC design, licensing, and SharePoint permissions.</p>
+                    <p><strong>Approach:</strong> Standardised joiner/mover/leaver handling, enforced role-based permissions and group policies, and reviewed licensing for cost/compliance.</p>
+                    <p><strong>Outcome:</strong> Consistent, least-privilege access across staff; secure, compliant workspaces. <em>[add a metric — e.g. provisioning time per new hire, licences reclaimed]</em></p>
+                    <p><strong>Lessons:</strong> <em>[fill in — e.g. group-based licensing scales better than per-user; PowerShell/Graph removes repetitive toil]</em></p>
                 </div>
                 <button class="read-more-btn">See more</button>
                 <div class="tech-tags">
                     <span class="tech-tag">Microsoft 365</span>
                     <span class="tech-tag">SharePoint</span>
-                    <span class="tech-tag">Azure AD</span>
+                    <span class="tech-tag">Entra ID</span>
                     <span class="tech-tag">IT Admin</span>
                 </div>
+                <!-- TODO: create the companion repo, then uncomment to wire this card.
+                <div class="projects-icon">
+                    <a href="https://github.com/haikalfitri/m365-entra-lab"><i class='bx bxl-github'></i><span>M365 lab repo</span></a>
+                    <a href="#"><i class='bx bx-terminal'></i><span>PowerShell scripts</span></a>
+                </div>
+                -->
             </div>
 
             <!-- Infra Card E — IT Endpoint & Device Management -->
@@ -168,6 +222,13 @@
                 <h3>IT Endpoint &amp; Device Management</h3>
                 <div class="project-content">
                     <p>Managed the full device lifecycle across the organisation — provisioning, configuring, and troubleshooting laptops, desktops, printers, and peripherals. Handled IT onboarding for new staff, maintained asset inventory, and resolved hardware and software issues to minimise downtime.</p>
+                    <p class="cs-divider"><strong>Case study</strong> <span class="cs-note">— sanitised</span></p>
+                    <p><strong>Context:</strong> End-to-end device lifecycle and IT onboarding for staff across the organisation. <em>[refine — fleet size]</em></p>
+                    <p><strong>Problem:</strong> Inconsistent onboarding and ad-hoc asset tracking risked setup delays and downtime.</p>
+                    <p><strong>My role:</strong> Owned provisioning, onboarding, asset inventory, and hardware/software troubleshooting.</p>
+                    <p><strong>Approach:</strong> Standardised the onboarding checklist and device build, maintained an asset inventory, and triaged issues to minimise downtime.</p>
+                    <p><strong>Outcome:</strong> Faster, more consistent onboarding and fewer setup delays. <em>[quantify — e.g. setup time per device, # devices tracked; see the it-asset-inventory-toolkit repo for the automation]</em></p>
+                    <p><strong>Lessons:</strong> <em>[fill in — e.g. a single source of truth for assets pays off; scripting the inventory removes manual error]</em></p>
                 </div>
                 <button class="read-more-btn">See more</button>
                 <div class="tech-tags">
@@ -176,7 +237,15 @@
                     <span class="tech-tag">Device Provisioning</span>
                     <span class="tech-tag">Troubleshooting</span>
                 </div>
+                <!-- TODO: create the companion repo, then uncomment to wire this card.
+                <div class="projects-icon">
+                    <a href="https://github.com/haikalfitri/it-asset-inventory-toolkit"><i class='bx bxl-github'></i><span>Inventory toolkit</span></a>
+                    <a href="#"><i class='bx bx-bar-chart-alt-2'></i><span>Sample report</span></a>
+                </div>
+                -->
             </div>
+
+            <h3 class="group-heading">Analytics Foundation <span class="group-note">— the data &amp; automation lens I bring to infrastructure</span></h3>
 
             <!-- Project 1 — Lean Six Sigma (highest impact, professional) -->
             <div class="projects-box cat-data no-image">
@@ -287,12 +356,12 @@
                             <p class="company">Cypark Sdn Bhd</p>
                             <ul class="experience-bullets">
                                 <li>Managed and maintained Proxmox virtualization infrastructure and backup systems to ensure stable and reliable operations.</li>
-                                <li>Strengthened network security through SCADA vulnerability assessments and infrastructure risk analysis.</li>
+                                <li>Supported network and OT security through SCADA vulnerability assessments and infrastructure risk analysis.</li>
                                 <li>Managed firewalls, switches, access points, IP phones, and TCP/IP networks to maintain secure network connectivity.</li>
                                 <li>Led company-wide Splashtop remote access deployment, improving remote support accessibility and response efficiency.</li>
                                 <li>Streamlined IT onboarding, device provisioning, and troubleshooting workflows to reduce setup delays and support downtime.</li>
                                 <li>Administered Microsoft 365, SharePoint, and enterprise access controls to maintain secure collaboration environments.</li>
-                                <li>Improved IT operations using AI-driven workflow automation tools to reduce repetitive support tasks.</li>
+                                <li>Reduced repetitive IT and support tasks through workflow automation and scripting, improving turnaround.</li>
                             </ul>
                         </div>
                         <div class="resume-item">
@@ -337,208 +406,141 @@
 
                 <div class="resume-detail skills">
                     <div class="resume-list">
-                        <!-- Category 1 — Systems & IT -->
+                        <!-- Category 1 — Infrastructure & Cloud -->
                         <div class="category-skill">
-                            <h3><span class="firstw">Systems</span> <span class="secondw">& IT</span></h3>
+                            <h3><span class="firstw">Infrastructure</span> <span class="secondw">& Cloud</span></h3>
                             <div class="resume-list">
                                 <div class="resume-item">
                                     <i class='bx bx-server'></i>
-                                    <span>Proxmox</span>
+                                    <span>Proxmox VE / PBS</span>
                                 </div>
                                 <div class="resume-item">
-                                    <i class='bx bx-wifi'></i>
-                                    <span>Network Config</span>
-                                </div>
-                                <div class="resume-item">
-                                    <i class='bx bx-shield'></i>
-                                    <span>Network Security</span>
-                                </div>
-                                <div class="resume-item">
-                                    <i class='bx bx-desktop'></i>
-                                    <span>Remote Access</span>
+                                    <i class='bx bx-sitemap'></i>
+                                    <span>Active Directory</span>
                                 </div>
                                 <div class="resume-item">
                                     <i class='bx bxl-microsoft'></i>
-                                    <span>Microsoft 365 Admin</span>
+                                    <span>Microsoft 365 / Entra</span>
                                 </div>
                                 <div class="resume-item">
                                     <i class='bx bx-group'></i>
                                     <span>SharePoint</span>
                                 </div>
                                 <div class="resume-item">
-                                    <i class='bx bx-radar'></i>
-                                    <span>SCADA Networks</span>
+                                    <i class='bx bx-desktop'></i>
+                                    <span>Remote Access</span>
                                 </div>
                                 <div class="resume-item">
-                                    <i class='bx bx-bot'></i>
-                                    <span>AI Workflow Automation</span>
+                                    <i class='bx bxl-aws'></i>
+                                    <span>AWS · in progress</span>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Category 2 — Tools & Technologies -->
+                        <!-- Category 2 — Networking & Security -->
                         <div class="category-skill">
-                            <h3><span class="firstw">Tools</span> <span class="secondw">& Technologies</span></h3>
+                            <h3><span class="firstw">Networking</span> <span class="secondw">& Security</span></h3>
                             <div class="resume-list">
                                 <div class="resume-item">
-                                    <i class='bx bx-desktop'></i>
-                                    <span>Splashtop</span>
-                                </div>
-                                <div class="resume-item">
-                                    <i class='bx bx-search-alt-2'></i>
-                                    <span>Wireshark</span>
+                                    <i class='bx bx-wifi'></i>
+                                    <span>Network Config</span>
                                 </div>
                                 <div class="resume-item">
                                     <i class='bx bx-shield-quarter'></i>
                                     <span>pfSense / Firewall</span>
                                 </div>
                                 <div class="resume-item">
-                                    <i class='bx bxl-microsoft' ></i>
-                                    <span>Microsoft Power BI</span>
+                                    <i class='bx bx-search-alt-2'></i>
+                                    <span>Wireshark</span>
                                 </div>
                                 <div class="resume-item">
-                                    <i class='bx bx-chart'></i>
-                                    <span>Tableau</span>
+                                    <i class='bx bx-shield'></i>
+                                    <span>Network Security</span>
+                                </div>
+                                <div class="resume-item">
+                                    <i class='bx bx-radar'></i>
+                                    <span>SCADA / OT Networks</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Category 3 — Automation & Tools -->
+                        <div class="category-skill">
+                            <h3><span class="firstw">Automation</span> <span class="secondw">& Tools</span></h3>
+                            <div class="resume-list">
+                                <div class="resume-item">
+                                    <i class='bx bx-bot'></i>
+                                    <span>AI Workflow Automation</span>
+                                </div>
+                                <div class="resume-item">
+                                    <i class='bx bxl-git'></i>
+                                    <span>Version Control · Git</span>
+                                </div>
+                                <div class="resume-item">
+                                    <i class='bx bxl-python'></i>
+                                    <span>Python</span>
+                                </div>
+                                <div class="resume-item">
+                                    <i class='bx bx-data'></i>
+                                    <span>SQL</span>
                                 </div>
                                 <div class="resume-item">
                                     <i class='bx bx-spreadsheet'></i>
                                     <span>Excel</span>
                                 </div>
                                 <div class="resume-item">
-                                    <i class='bx bx-server'></i>
-                                    <span>SQL Server Management Studio</span>
-                                </div>
-                                <div class="resume-item">
-                                    <i class='bx bxs-ship'></i>
-                                    <span>phpMyAdmin</span>
+                                    <i class='bx bx-code-alt'></i>
+                                    <span>Web · HTML/CSS/JS</span>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Category 3 — Soft Skills -->
+                        <!-- Category 4 — Data & Analytics (differentiator) -->
                         <div class="category-skill">
-                            <h3><span class="firstw">Soft</span> <span class="secondw">Skills</span></h3>
+                            <h3><span class="firstw">Data</span> <span class="secondw">& Analytics</span></h3>
                             <div class="resume-list">
+                                <div class="resume-item">
+                                    <i class='bx bx-analyse'></i>
+                                    <span>Data Analysis</span>
+                                </div>
+                                <div class="resume-item">
+                                    <i class='bx bx-bar-chart-alt'></i>
+                                    <span>Power BI</span>
+                                </div>
+                                <div class="resume-item">
+                                    <i class='bx bx-chip'></i>
+                                    <span>Machine Learning</span>
+                                </div>
+                                <div class="resume-item">
+                                    <i class='bx bx-brain'></i>
+                                    <span>NLP</span>
+                                </div>
+                                <div class="resume-item">
+                                    <i class='bx bx-doughnut-chart'></i>
+                                    <span>Data Visualization</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Category 5 — Core Strengths (condensed) -->
+                        <div class="category-skill">
+                            <h3><span class="firstw">Core</span> <span class="secondw">Strengths</span></h3>
+                            <div class="resume-list">
+                                <div class="resume-item">
+                                    <i class='bx bx-check-double'></i>
+                                    <span>Problem Solving</span>
+                                </div>
                                 <div class="resume-item">
                                     <i class='bx bx-comment-dots'></i>
                                     <span>Communication</span>
                                 </div>
                                 <div class="resume-item">
-                                    <i class='bx bxs-component'></i>
-                                    <span>Collaboration</span>
-                                </div>
-                                <div class="resume-item">
-                                    <i class='bx bx-check-double' ></i>
-                                    <span>Problem Solving</span>
-                                </div>
-                                <div class="resume-item">
-                                    <i class='bx bx-fast-forward-circle' ></i>
+                                    <i class='bx bx-fast-forward-circle'></i>
                                     <span>Adaptability</span>
-                                </div>
-                                <div class="resume-item">
-                                    <i class='bx bx-time-five' ></i>
-                                    <span>Time Management</span>
-                                </div>
-                                <div class="resume-item">
-                                    <i class='bx bx-like'></i>
-                                    <span>Integrity</span>
                                 </div>
                                 <div class="resume-item">
                                     <i class='bx bx-bullseye'></i>
                                     <span>Attention to Detail</span>
-                                </div>
-                                <div class="resume-item">
-                                    <i class='bx bx-outline'></i>
-                                    <span>Creativity</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Category 4 — Software Development -->
-                        <div class="category-skill">
-                            <h3><span class="firstw">Software</span> <span class="secondw">Development</span></h3>
-                            <div class="resume-list">
-                                <div class="resume-item">
-                                    <i class='bx bxl-git'></i>
-                                    <span>Version Control</span>
-                                </div>
-                                <div class="resume-item">
-                                    <i class='bx bx-user-circle'></i>
-                                    <span>User Acceptance Testing</span>
-                                </div>
-                                <div class="resume-item">
-                                    <i class='bx bx-link' ></i>
-                                    <span>Data Integration</span>
-                                </div>
-                                <div class="resume-item">
-                                    <i class='bx bx-data' ></i>
-                                    <span>Database Management</span>
-                                </div>
-                                <div class="resume-item">
-                                    <i class='bx bx-color'></i>
-                                    <span>Agile Methodologies</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Category 5 — Data Science & Intelligent Systems -->
-                        <div class="category-skill">
-                            <h3><span class="firstw">Data Science</span> <span class="secondw">& Intelligent System</span></h3>
-                            <div class="resume-list">
-                                <div class="resume-item">
-                                    <i class='bx bx-analyse' ></i>
-                                    <span>Data Analysis</span>
-                                </div>
-                                <div class="resume-item">
-                                    <i class='bx bx-bot'></i>
-                                    <span>Machine Learning</span>
-                                </div>
-                                <div class="resume-item">
-                                    <i class='bx bx-brain'></i>
-                                    <span>Natural Language Processing</span>
-                                </div>
-                                <div class="resume-item">
-                                    <i class='bx bx-doughnut-chart'></i>
-                                    <span>Data visualization</span>
-                                </div>
-                                <div class="resume-item">
-                                    <i class='bx bx-bar-chart-alt'></i>
-                                    <span>Model Evaluation</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Category 6 — Programming Languages -->
-                        <div class="category-skill">
-                            <h3><span class="firstw">Programming</span> <span class="secondw">Languages</span></h3>
-                            <div class="resume-list">
-                                <div class="resume-item">
-                                    <i class='bx bxl-python'></i>
-                                    <span>Python</span>
-                                </div>
-                                <div class="resume-item">
-                                    <i class='bx bx-data' ></i>
-                                    <span>SQL</span>
-                                </div>
-                                <div class="resume-item">
-                                    <i class='bx bx-code-curly'></i>
-                                    <span>R</span>
-                                </div>
-                                <div class="resume-item">
-                                    <i class='bx bxl-java' ></i>
-                                    <span>Java</span>
-                                </div>
-                                <div class="resume-item">
-                                    <i class='bx bxs-file-html' ></i>
-                                    <span>HTML</span>
-                                </div>
-                                <div class="resume-item">
-                                    <i class='bx bxs-file-css' ></i>
-                                    <span>CSS</span>
-                                </div>
-                                <div class="resume-item">
-                                    <i class='bx bxl-javascript' ></i>
-                                    <span>JavaScript</span>
                                 </div>
                             </div>
                         </div>

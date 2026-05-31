@@ -641,6 +641,50 @@ section {
     gap: 2.2rem;
 }
 
+/* Project group headings (span the full grid width) */
+.projects-container .group-heading {
+    grid-column: 1 / -1;
+    font-family: var(--display-font);
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: var(--white-color);
+    margin: 1.4rem 0 0;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.projects-container .group-heading:first-child { margin-top: 0; }
+
+.projects-container .group-heading .group-note {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--muted);
+}
+
+/* Sanitised case-study block inside project cards */
+.projects-box .project-content .cs-divider {
+    margin-top: 1.4rem;
+    padding-top: 1rem;
+    border-top: 1px dashed var(--glass-border);
+    color: var(--cat-color);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 1.15rem;
+}
+
+.projects-box .project-content .cs-divider .cs-note {
+    color: var(--muted);
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+
+.projects-box .project-content em {
+    color: var(--muted);
+    font-style: italic;
+    opacity: 0.9;
+}
+
 .projects-container .projects-box{
     padding: 0;
     background: var(--glass);
