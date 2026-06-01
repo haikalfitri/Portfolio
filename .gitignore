@@ -1,3 +1,4 @@
 # Ignore Claude system and instruction files
+CLAUDE.md
 claude.md
 .claude/
