@@ -45,26 +45,24 @@
         <div class="home-detail">
             <span class="tag">Available for new opportunities</span>
             <h1>Haikal Fitri</h1>
-            <p>Infrastructure engineer who keeps virtualization, networks, and Microsoft 365 running — and brings a data-driven mindset to make IT operations measurably more reliable. Backed by a degree in intelligent systems engineering and hands-on business-analytics experience.</p>
+            <p class="role">IT Infrastructure Engineer</p>
+            <p>I keep virtualization, networks, Microsoft 365, and endpoints running and secure. Backed by a systems-engineering degree and a data-driven approach to making IT measurably more reliable.</p>
             <div class="stats">
                 <div class="stat">
-                    <span class="num">~70</span>
-                    <span class="label">Endpoints secured</span>
+                    <span class="num">~150</span>
+                    <span class="label">Users managed</span>
                 </div>
                 <div class="stat">
-                    <span class="num">Multi-site</span>
-                    <span class="label">Network (HQ + sites)</span>
-                </div>
-                <div class="stat">
-                    <span class="num">Zero</span>
-                    <span class="label">Data-loss incidents</span>
+                    <span class="num">1 HQ + 8 Sites</span>
+                    <span class="label">Locations managed</span>
                 </div>
             </div>
             <div class="btn-sci">
                 <a href="assets/Haikal-Fitri-Resume.pdf" class="btn">Download Resume</a>
+                <a href="#projects" class="btn btn-secondary">View Projects</a>
                 <div class="sci">
                     <a href="https://github.com/haikalfitri"><i class='bx bxl-github' ></i><span>Visit Github</span></a>
-                    <a href="https://www.linkedin.com/in/muhdhaikalfitri/"><i class='bx bxl-linkedin-square' ></i><span>View LinkedIN</span></a>
+                    <a href="https://www.linkedin.com/in/muhdhaikalfitri/"><i class='bx bxl-linkedin-square' ></i><span>View LinkedIn</span></a>
                     <a href="mailto:haikalfitri.hassim@gmail.com"><i class='bx bxs-envelope' ></i><span>Write email</span></a>
                     <a href="tel:+601119329198"><i class='bx bx-phone-call'></i> <span>Contact me</span></a>
                     <a href="https://wa.me/601119329198"><i class='bx bxl-whatsapp' ></i><span>WhatsApp me</span></a>
@@ -79,6 +77,9 @@
                 </div>
             </div>
         </div>
+        <a href="#projects" class="scroll-down" aria-label="Scroll to projects">
+            <i class='bx bx-chevron-down'></i>
+        </a>
     </section>
 
      <!--Project Section-->
@@ -96,13 +97,13 @@
                 <h3>Company-Wide Remote Access Deployment</h3>
                 <div class="project-content">
                     <p>Led end-to-end deployment of Splashtop across the organisation. Configured access policies, enrolled devices, and trained staff — cutting remote support response time and eliminating the need for on-site visits for routine troubleshooting.</p>
-                    <p><strong>Outcome:</strong> Enrolled and secured nearly 70 endpoints company-wide, enabling consistent remote support across all departments.</p>
+                    <p><strong>Outcome:</strong> Enrolled nearly 70 endpoints in Splashtop remote access, enabling consistent remote support across all departments.</p>
                     <p class="cs-divider"><strong>Case study</strong> <span class="cs-note">— sanitised</span></p>
                     <p><strong>Context:</strong> A renewable-energy company with HQ and multiple remote sites, where routine IT support still required on-site visits. <em>[refine context]</em></p>
                     <p><strong>Problem:</strong> No standardised remote-support tooling — troubleshooting meant travel and delays across departments.</p>
                     <p><strong>My role:</strong> Owned the rollout end-to-end — tool selection, access-policy design, enrolment, and staff enablement.</p>
                     <p><strong>Approach:</strong> Defined role-based access policies, enrolled endpoints in waves, enforced MFA and session logging, and ran short training sessions per department.</p>
-                    <p><strong>Outcome:</strong> ~70 endpoints secured company-wide; routine on-site visits eliminated. <em>[add the response-time delta, e.g. "first-response time cut from X to Y"]</em></p>
+                    <p><strong>Outcome:</strong> ~70 endpoints enrolled in Splashtop remote access; routine on-site visits eliminated. <em>[add the response-time delta, e.g. "first-response time cut from X to Y"]</em></p>
                     <p><strong>Lessons:</strong> <em>[fill in — e.g. phased enrolment reduced disruption; clear policy mapping prevented over-permissioning]</em></p>
                 </div>
                 <button class="read-more-btn">See more</button>
@@ -127,13 +128,13 @@
                 <h3>Proxmox Virtualisation &amp; Backup Management</h3>
                 <div class="project-content">
                     <p>Managed Proxmox VE nodes — provisioning VMs and LXC containers for Active Directory and business workloads. Integrated Proxmox Backup Server with automated backups, snapshots, and replication for disaster recovery. Configured storage pools, resource monitoring, and firewall rules to secure and isolate production environments.</p>
-                    <p><strong>Outcome:</strong> Maintained reliable virtualisation across multiple nodes with zero data loss through scheduled PBS backups and replication.</p>
+                    <p><strong>Outcome:</strong> Maintained reliable virtualisation across multiple nodes with scheduled PBS backups, snapshots, and replication for disaster-recovery readiness.</p>
                     <p class="cs-divider"><strong>Case study</strong> <span class="cs-note">— sanitised</span></p>
                     <p><strong>Context:</strong> Production virtualisation for AD and business workloads across multiple Proxmox nodes. <em>[refine — node/VM counts if shareable]</em></p>
                     <p><strong>Problem:</strong> Workloads needed reliable provisioning, isolation, and a tested recovery path — not just backups that are assumed to work.</p>
                     <p><strong>My role:</strong> Provisioned and maintained the VMs/LXC, designed the backup &amp; replication schedule, and owned disaster-recovery readiness.</p>
                     <p><strong>Approach:</strong> Configured storage pools and resource monitoring, set firewall rules to isolate production, scheduled PBS backups + snapshots, and replicated between nodes.</p>
-                    <p><strong>Outcome:</strong> Zero data-loss incidents. <em>[strengthen with a documented restore test — restore time (RTO) and recovery point (RPO); see the proxmox-homelab repo for a reproducible version]</em></p>
+                    <p><strong>Outcome:</strong> Migrated legacy servers to SharePoint before end-of-life. <em>[strengthen with a documented restore test — restore time (RTO) and recovery point (RPO); see the proxmox-homelab repo for a reproducible version]</em></p>
                     <p><strong>Lessons:</strong> <em>[fill in — e.g. an untested backup is not a backup; replication interval vs. RPO trade-off]</em></p>
                 </div>
                 <button class="read-more-btn">See more</button>

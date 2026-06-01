@@ -31,7 +31,6 @@
 html{
     font-size: 65%;
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
 }
 
 body{
@@ -185,7 +184,6 @@ section {
     width: 100%;
     min-height: 100vh;
     padding: 12rem 5% 4rem;
-    scroll-snap-align: start;
     background: var(--bg-color);
 }
 
@@ -406,6 +404,17 @@ section {
     background-clip: text;
 }
 
+.home-detail .role {
+    font-family: var(--display-font);
+    font-size: clamp(1.8rem, 2.6vw, 2.2rem);
+    font-weight: 500;
+    color: var(--main-color);
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    margin: 1rem 0 0;
+    max-width: none;
+}
+
 .home-detail h2{
     display: inline-block;
     font-size: 2.4rem;
@@ -470,6 +479,7 @@ section {
     font-weight: 700;
     color: var(--main-color);
     letter-spacing: -0.02em;
+    white-space: nowrap;
 }
 
 .home-detail .stat .label {
@@ -515,6 +525,20 @@ section {
 
 .btn:hover::after {
     transform: translateX(5px);
+}
+
+/* Secondary / ghost button */
+.btn.btn-secondary {
+    background: transparent;
+    color: var(--white-color);
+    border: 1px solid var(--glass-border);
+    box-shadow: none;
+}
+
+.btn.btn-secondary:hover {
+    color: var(--main-color);
+    border-color: var(--main-color);
+    box-shadow: 0 0 0 4px rgba(0, 255, 204, 0.12);
 }
 
 .home-detail .btn-sci .sci {
@@ -632,6 +656,31 @@ section {
 
 .home-img .img-box:hover .img-item img {
     transform: scale(1.05);
+}
+
+/* Scroll-down indicator */
+.scroll-down {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-flex;
+    color: var(--main-color);
+    font-size: 3.2rem;
+    line-height: 1;
+    opacity: 0.7;
+    z-index: 2;
+    animation: scroll-bounce 2s ease-in-out infinite;
+    transition: opacity 0.3s ease;
+}
+
+.scroll-down:hover {
+    opacity: 1;
+}
+
+@keyframes scroll-bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(0.8rem); }
 }
 
 /* ============ PROJECTS ============ */
@@ -1623,6 +1672,7 @@ ul.experience-bullets li::before {
     section { padding: 11rem 5% 4rem; }
     .home { grid-template-columns: 1fr; gap: 3rem; text-align: left; }
     .home-img { order: -1; }
+    .scroll-down { display: none; }
     .home-img .img-box { width: 26rem; height: 26rem; }
     .home-detail p { max-width: 100%; }
     .resume-container { grid-template-columns: 1fr; gap: 3rem; }
