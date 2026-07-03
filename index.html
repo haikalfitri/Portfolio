@@ -3,31 +3,49 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haikal Fitri — Engineer, Digital Infrastructure Support</title>
     <meta name="description" content="Portfolio of Muhammad Haikal Fitri — Engineer, Digital Infrastructure Support. Virtualization, networks, M365, security, and IT operations, backed by intelligent systems engineering and data analytics.">
     <meta name="author" content="Muhammad Haikal Fitri">
+    <meta name="theme-color" content="#0f172a">
+    <link rel="canonical" href="https://haikalfitri.github.io/Portfolio/">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f172a'/%3E%3Ctext x='32' y='43' font-family='Segoe UI, Arial, sans-serif' font-size='30' font-weight='700' text-anchor='middle' fill='%232dd4bf'%3EHF%3C/text%3E%3C/svg%3E">
 
     <!-- Open Graph / social preview -->
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://haikalfitri.github.io/Portfolio/">
     <meta property="og:title" content="Haikal Fitri — Engineer, Digital Infrastructure Support">
     <meta property="og:description" content="Infrastructure, networks, and systems engineering — with a data-driven approach to IT operations.">
-    <meta property="og:image" content="images/homepage.png">
+    <meta property="og:image" content="https://haikalfitri.github.io/Portfolio/images/homepage.jpg">
     <meta name="twitter:card" content="summary_large_image">
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-
     <!-- custom css -->
     <link rel="stylesheet" href="CSS/style.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Muhammad Haikal Fitri",
+      "jobTitle": "Engineer, Digital Infrastructure Support",
+      "url": "https://haikalfitri.github.io/Portfolio/",
+      "email": "mailto:haikalfitri.hassim@gmail.com",
+      "address": { "@type": "PostalAddress", "addressLocality": "Kajang", "addressRegion": "Selangor", "addressCountry": "MY" },
+      "sameAs": [
+        "https://github.com/haikalfitri",
+        "https://www.linkedin.com/in/muhdhaikalfitri/"
+      ]
+    }
+    </script>
 </head>
 
 <body>
     
     <!--header-->
     <header class="active">
-        <a href="#" class="logo">Welcome!</a>
+        <a href="#" class="logo">Haikal Fitri</a>
         
         <i class='bx bx-menu' id="menu-icon"></i>
 
@@ -73,7 +91,7 @@
         <div class="home-img">
             <div class="img-box">
                 <div class="img-item">
-                    <img src="images/homepage.png" alt="Portrait of Haikal Fitri">
+                    <img src="images/homepage.jpg" alt="Portrait of Haikal Fitri" width="800" height="800">
                 </div>
             </div>
         </div>
@@ -99,12 +117,13 @@
                     <p>Led end-to-end deployment of Splashtop across the organisation. Configured access policies, enrolled devices, and trained staff — cutting remote support response time and eliminating the need for on-site visits for routine troubleshooting.</p>
                     <p><strong>Outcome:</strong> Enrolled nearly 70 endpoints in Splashtop remote access, enabling consistent remote support across all departments.</p>
                     <p class="cs-divider"><strong>Case study</strong> <span class="cs-note">— sanitised</span></p>
-                    <p><strong>Context:</strong> A renewable-energy company with HQ and multiple remote sites, where routine IT support still required on-site visits. <em>[refine context]</em></p>
-                    <p><strong>Problem:</strong> No standardised remote-support tooling — troubleshooting meant travel and delays across departments.</p>
-                    <p><strong>My role:</strong> Owned the rollout end-to-end — tool selection, access-policy design, enrolment, and staff enablement.</p>
-                    <p><strong>Approach:</strong> Defined role-based access policies, enrolled endpoints in waves, enforced MFA and session logging, and ran short training sessions per department.</p>
-                    <p><strong>Outcome:</strong> ~70 endpoints enrolled in Splashtop remote access; routine on-site visits eliminated. <em>[add the response-time delta, e.g. "first-response time cut from X to Y"]</em></p>
-                    <p><strong>Lessons:</strong> <em>[fill in — e.g. phased enrolment reduced disruption; clear policy mapping prevented over-permissioning]</em></p>
+                    <!-- TODO metrics: add the first-response-time delta once measured (e.g. "cut from X to Y") -->
+                    <p class="cs-field"><strong>Context</strong> A renewable-energy company with an HQ and multiple remote sites, where routine IT support still meant travelling to the affected site.</p>
+                    <p class="cs-field"><strong>Problem</strong> No standardised remote-support tooling — troubleshooting meant travel and delays across departments.</p>
+                    <p class="cs-field"><strong>My role</strong> Owned the rollout end-to-end — tool selection, access-policy design, endpoint enrolment, and staff enablement.</p>
+                    <p class="cs-field"><strong>Approach</strong> Defined role-based access policies, enrolled endpoints in waves to avoid disruption, enforced MFA and session logging, and ran short per-department training sessions.</p>
+                    <p class="cs-field"><strong>Outcome</strong> Around 70 endpoints enrolled in Splashtop remote access — routine issues are now resolved remotely instead of requiring on-site visits.</p>
+                    <p class="cs-field"><strong>Lessons</strong> Phased enrolment kept support available throughout the rollout, and mapping access policies to roles up front prevented over-permissioning later.</p>
                 </div>
                 <button class="read-more-btn">See more</button>
                 <div class="tech-tags">
@@ -130,12 +149,13 @@
                     <p>Managed Proxmox VE nodes — provisioning VMs and LXC containers for Active Directory and business workloads. Integrated Proxmox Backup Server with automated backups, snapshots, and replication for disaster recovery. Configured storage pools, resource monitoring, and firewall rules to secure and isolate production environments.</p>
                     <p><strong>Outcome:</strong> Maintained reliable virtualisation across multiple nodes with scheduled PBS backups, snapshots, and replication for disaster-recovery readiness.</p>
                     <p class="cs-divider"><strong>Case study</strong> <span class="cs-note">— sanitised</span></p>
-                    <p><strong>Context:</strong> Production virtualisation for AD and business workloads across multiple Proxmox nodes. <em>[refine — node/VM counts if shareable]</em></p>
-                    <p><strong>Problem:</strong> Workloads needed reliable provisioning, isolation, and a tested recovery path — not just backups that are assumed to work.</p>
-                    <p><strong>My role:</strong> Provisioned and maintained the VMs/LXC, designed the backup &amp; replication schedule, and owned disaster-recovery readiness.</p>
-                    <p><strong>Approach:</strong> Configured storage pools and resource monitoring, set firewall rules to isolate production, scheduled PBS backups + snapshots, and replicated between nodes.</p>
-                    <p><strong>Outcome:</strong> Migrated legacy servers to SharePoint before end-of-life. <em>[strengthen with a documented restore test — restore time (RTO) and recovery point (RPO); see the proxmox-homelab repo for a reproducible version]</em></p>
-                    <p><strong>Lessons:</strong> <em>[fill in — e.g. an untested backup is not a backup; replication interval vs. RPO trade-off]</em></p>
+                    <!-- TODO metrics: node/VM counts if shareable; add a documented restore test with RTO/RPO (see proxmox-homelab template) -->
+                    <p class="cs-field"><strong>Context</strong> Production virtualisation for Active Directory and business workloads across multiple Proxmox nodes.</p>
+                    <p class="cs-field"><strong>Problem</strong> Workloads needed reliable provisioning, isolation, and a tested recovery path — not just backups that are assumed to work.</p>
+                    <p class="cs-field"><strong>My role</strong> Provisioned and maintained the VMs and LXC containers, designed the backup and replication schedule, and owned disaster-recovery readiness.</p>
+                    <p class="cs-field"><strong>Approach</strong> Configured storage pools and resource monitoring, isolated production with firewall rules, scheduled PBS backups and snapshots, and replicated critical workloads between nodes.</p>
+                    <p class="cs-field"><strong>Outcome</strong> Reliable virtualisation across nodes, with scheduled PBS backups, snapshots, and replication in place for disaster-recovery readiness.</p>
+                    <p class="cs-field"><strong>Lessons</strong> An untested backup is not a backup — restore checks matter as much as the schedule, and replication frequency is a direct trade-off against how much data you can afford to lose.</p>
                 </div>
                 <button class="read-more-btn">See more</button>
                 <div class="tech-tags">
@@ -163,12 +183,13 @@
                     <p>Monitored and maintained network infrastructure across HQ and multiple sites, overseeing switches, access points, IP phones, and firewall devices to ensure consistent uptime and connectivity. Supported SCADA/OT vulnerability assessments and infrastructure risk analysis, helping identify and prioritise security gaps.</p>
                     <p><strong>Outcome:</strong> Sustained stable connectivity across HQ and remote sites while contributing to a stronger network and OT security posture.</p>
                     <p class="cs-divider"><strong>Case study</strong> <span class="cs-note">— sanitised</span></p>
-                    <p><strong>Context:</strong> Multi-site network (HQ + remote sites) with operational-technology (SCADA) segments alongside corporate IT. <em>[refine]</em></p>
-                    <p><strong>Problem:</strong> Mixed IT/OT environments need consistent connectivity <em>and</em> clear segmentation so a corporate-side issue can't reach control systems.</p>
-                    <p><strong>My role:</strong> Maintained switches/APs/IP phones/firewalls and supported the vulnerability-assessment and risk-analysis work.</p>
-                    <p><strong>Approach:</strong> Monitored uptime across sites, maintained firewall rules, and assisted assessments of the OT/network segments. <em>[name the method/standard you actually followed — e.g. a vendor checklist, IEC 62443, or NIST 800-82 — only if accurate]</em></p>
-                    <p><strong>Outcome:</strong> Stable multi-site connectivity; prioritised list of gaps and mitigations. <em>[add a before/after or # of findings if shareable]</em></p>
-                    <p><strong>Lessons:</strong> <em>[fill in — e.g. IT/OT segmentation principles; least-privilege between segments]</em></p>
+                    <!-- TODO: name the assessment method/standard if accurate (vendor checklist, IEC 62443, NIST 800-82); add findings count or before/after if shareable -->
+                    <p class="cs-field"><strong>Context</strong> A multi-site network — HQ plus remote sites — with operational-technology (SCADA) segments running alongside corporate IT.</p>
+                    <p class="cs-field"><strong>Problem</strong> Mixed IT/OT environments need consistent connectivity and clear segmentation, so a corporate-side issue can never reach control systems.</p>
+                    <p class="cs-field"><strong>My role</strong> Maintained switches, access points, IP phones, and firewalls across sites, and supported the vulnerability-assessment and risk-analysis work on the OT side.</p>
+                    <p class="cs-field"><strong>Approach</strong> Monitored uptime across sites, maintained and reviewed firewall rules, and assisted structured assessments of the network and OT segments.</p>
+                    <p class="cs-field"><strong>Outcome</strong> Stable multi-site connectivity, with assessment findings prioritised into a concrete list of gaps and mitigations.</p>
+                    <p class="cs-field"><strong>Lessons</strong> Segmentation only works when it is enforced everywhere — least privilege between IT and OT segments is what keeps corporate incidents away from control systems.</p>
                 </div>
                 <button class="read-more-btn">See more</button>
                 <div class="tech-tags">
@@ -194,12 +215,13 @@
                     <p>Administered Microsoft 365 and SharePoint daily — handling user provisioning, access controls, group policies, and licensing across the organisation. Maintained secure collaboration environments and enforced role-based permissions to safeguard company data.</p>
                     <p><strong>Outcome:</strong> Streamlined identity, licensing, and access management for all staff while keeping M365 and SharePoint workspaces secure and compliant.</p>
                     <p class="cs-divider"><strong>Case study</strong> <span class="cs-note">— sanitised</span></p>
-                    <p><strong>Context:</strong> Day-to-day identity and collaboration administration for the whole organisation on Microsoft 365 / Entra. <em>[refine — user count if shareable]</em></p>
-                    <p><strong>Problem:</strong> Access, licensing, and permissions had to stay correct and least-privilege as staff joined, moved, and left.</p>
-                    <p><strong>My role:</strong> Owned user provisioning, group/RBAC design, licensing, and SharePoint permissions.</p>
-                    <p><strong>Approach:</strong> Standardised joiner/mover/leaver handling, enforced role-based permissions and group policies, and reviewed licensing for cost/compliance.</p>
-                    <p><strong>Outcome:</strong> Consistent, least-privilege access across staff; secure, compliant workspaces. <em>[add a metric — e.g. provisioning time per new hire, licences reclaimed]</em></p>
-                    <p><strong>Lessons:</strong> <em>[fill in — e.g. group-based licensing scales better than per-user; PowerShell/Graph removes repetitive toil]</em></p>
+                    <!-- TODO metrics: user count if shareable; provisioning time per new hire; licences reclaimed -->
+                    <p class="cs-field"><strong>Context</strong> Day-to-day identity and collaboration administration for the whole organisation on Microsoft 365 and Entra ID.</p>
+                    <p class="cs-field"><strong>Problem</strong> Access, licensing, and permissions had to stay correct and least-privilege as staff joined, moved between roles, and left.</p>
+                    <p class="cs-field"><strong>My role</strong> Owned user provisioning, group and RBAC design, licensing, and SharePoint permissions.</p>
+                    <p class="cs-field"><strong>Approach</strong> Standardised joiner/mover/leaver handling, enforced role-based permissions and group policies, and reviewed licensing regularly for cost and compliance.</p>
+                    <p class="cs-field"><strong>Outcome</strong> Consistent, least-privilege access across the organisation, with secure workspaces and licensing kept aligned to actual need.</p>
+                    <p class="cs-field"><strong>Lessons</strong> Group-based access and licensing scale far better than per-user changes, and scripting the repetitive parts removes both toil and human error.</p>
                 </div>
                 <button class="read-more-btn">See more</button>
                 <div class="tech-tags">
@@ -224,12 +246,13 @@
                 <div class="project-content">
                     <p>Managed the full device lifecycle across the organisation — provisioning, configuring, and troubleshooting laptops, desktops, printers, and peripherals. Handled IT onboarding for new staff, maintained asset inventory, and resolved hardware and software issues to minimise downtime.</p>
                     <p class="cs-divider"><strong>Case study</strong> <span class="cs-note">— sanitised</span></p>
-                    <p><strong>Context:</strong> End-to-end device lifecycle and IT onboarding for staff across the organisation. <em>[refine — fleet size]</em></p>
-                    <p><strong>Problem:</strong> Inconsistent onboarding and ad-hoc asset tracking risked setup delays and downtime.</p>
-                    <p><strong>My role:</strong> Owned provisioning, onboarding, asset inventory, and hardware/software troubleshooting.</p>
-                    <p><strong>Approach:</strong> Standardised the onboarding checklist and device build, maintained an asset inventory, and triaged issues to minimise downtime.</p>
-                    <p><strong>Outcome:</strong> Faster, more consistent onboarding and fewer setup delays. <em>[quantify — e.g. setup time per device, # devices tracked; see the it-asset-inventory-toolkit repo for the automation]</em></p>
-                    <p><strong>Lessons:</strong> <em>[fill in — e.g. a single source of truth for assets pays off; scripting the inventory removes manual error]</em></p>
+                    <!-- TODO metrics: fleet size; setup time per device; devices tracked (see it-asset-inventory-toolkit template) -->
+                    <p class="cs-field"><strong>Context</strong> End-to-end device lifecycle and IT onboarding for staff across the organisation.</p>
+                    <p class="cs-field"><strong>Problem</strong> Inconsistent onboarding and ad-hoc asset tracking risked setup delays, downtime, and unaccounted-for equipment.</p>
+                    <p class="cs-field"><strong>My role</strong> Owned provisioning, onboarding, asset inventory, and hardware/software troubleshooting.</p>
+                    <p class="cs-field"><strong>Approach</strong> Standardised the onboarding checklist and device build, kept a single asset inventory as the source of truth, and triaged issues to minimise downtime.</p>
+                    <p class="cs-field"><strong>Outcome</strong> Faster, more consistent onboarding, with every device accounted for from provisioning to retirement.</p>
+                    <p class="cs-field"><strong>Lessons</strong> A single source of truth for assets pays for itself — most slow-setup and "missing device" problems trace back to tracking, not hardware.</p>
                 </div>
                 <button class="read-more-btn">See more</button>
                 <div class="tech-tags">
@@ -255,12 +278,13 @@
                     <p>Built and maintain a company-wide IT Help Center on SharePoint — a single hub for knowledge-base guides, FAQs, an IT request form, and announcements, used by all employees.</p>
                     <p><strong>Outcome:</strong> Cut down repeat questions to IT and gave staff one central, self-service place to find guides and raise requests.</p>
                     <p class="cs-divider"><strong>Case study</strong> <span class="cs-note">— sanitised</span></p>
-                    <p><strong>Context:</strong> Employees had no central place for IT guides, and the same questions kept reaching the IT team through scattered channels.</p>
-                    <p><strong>Problem:</strong> Repetitive support load and no single source of truth for how-to guides, FAQs, or requests.</p>
-                    <p><strong>My role:</strong> Designed, built, and maintain the SharePoint Help Center end-to-end — structure, content, and the request workflow.</p>
-                    <p><strong>Approach:</strong> Organised a knowledge base of guides and FAQs by category, added an IT request form and an announcements area, and laid out the site so staff can self-serve before raising a ticket.</p>
-                    <p><strong>Outcome:</strong> Fewer repeat questions and a single self-service hub for all employees. <em>[quantify if you can — e.g. number of guides/articles, % drop in repeat queries, adoption across departments]</em></p>
-                    <p><strong>Lessons:</strong> <em>[fill in — e.g. clear information architecture drives adoption; good FAQs deflect the most common tickets]</em></p>
+                    <!-- TODO metrics: number of guides/articles; % drop in repeat queries; adoption across departments -->
+                    <p class="cs-field"><strong>Context</strong> Employees had no central place for IT guides, and the same questions kept reaching the IT team through scattered channels.</p>
+                    <p class="cs-field"><strong>Problem</strong> Repetitive support load and no single source of truth for how-to guides, FAQs, or requests.</p>
+                    <p class="cs-field"><strong>My role</strong> Designed, built, and maintain the SharePoint Help Center end-to-end — structure, content, and the request workflow.</p>
+                    <p class="cs-field"><strong>Approach</strong> Organised a knowledge base of guides and FAQs by category, added an IT request form and an announcements area, and laid out the site so staff can self-serve before raising a ticket.</p>
+                    <p class="cs-field"><strong>Outcome</strong> Fewer repeat questions reaching IT, and one self-service hub every employee knows to check first.</p>
+                    <p class="cs-field"><strong>Lessons</strong> Information architecture drives adoption — staff only self-serve when the answer is easier to find than it is to ask.</p>
                 </div>
                 <button class="read-more-btn">See more</button>
                 <div class="tech-tags">
@@ -332,7 +356,7 @@
                     <img src="images/project/4th project covid 19 early analysis.png" alt="Covid-19 data analysis project preview">
                 </div>
                 <h3>Covid-19 Data Insights</h3>
-                <p>The analysis delves into data cleaning, exploration, and visualization to reveal trends in   regional, and continental cases and deaths.</p>
+                <p>The analysis delves into data cleaning, exploration, and visualization to reveal trends in regional and continental cases and deaths.</p>
                 <button class="read-more-btn">See more</button>
                 <div class="tech-tags">
                     <span class="tech-tag">Python</span>
@@ -401,13 +425,21 @@
                             <p class="year">2023-2024</p>
                             <h3>Business/System Analyst (Petronas GEES)</h3>
                             <p class="company">Petronas Carigali Sdn Bhd</p>
-                            <p>I contributed to business improvements through data integration, process optimization, and analytics. I have been instrumental in enhancing system functionalities and have supported efforts to streamline operations. This experience reflects my ability to thrive in fast-paced environments and contribute meaningfully to organizational success.</p>
+                            <ul class="experience-bullets">
+                                <li>Analysed and reported on process flows for a Lean Six Sigma fuel-recoupment project, contributing to a 70% reduction in lead time and ~4,000 manhours saved.</li>
+                                <li>Managed reporting for the Vessel Tracking System (VTS), contributing to a 25% lead-time improvement and ~71,280 manhours saved.</li>
+                                <li>Contributed data analysis to a fuel-benchmarking initiative, identifying process-improvement opportunities.</li>
+                                <li>Supported wider business improvements through data integration, process optimisation, and analytics.</li>
+                            </ul>
                         </div>
                         <div class="resume-item">
                             <p class="year">2022 - 2023 (5 months)</p>
                             <h3>Web Developer Internship</h3>
                             <p class="company">UiTM Technoventure</p>
-                            <p> I contributed to the optimization of database operations and worked on enhancing the overall user experience. Through my involvement in developing dynamic web pages and interactive elements, I supported the successful execution of the project, ensuring that the final deliverables met both user needs and project objectives.</p>
+                            <ul class="experience-bullets">
+                                <li>Developed dynamic web pages and interactive elements that shipped as part of the project's final deliverables.</li>
+                                <li>Optimised database operations and improved the overall user experience of the platform.</li>
+                            </ul>
                         </div>
                        
                     </div>
@@ -685,6 +717,19 @@
             </div>
         </div>
      </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <p class="footer-copy">© 2026 Muhammad Haikal Fitri</p>
+            <div class="footer-links">
+                <a href="https://github.com/haikalfitri" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/muhdhaikalfitri/" aria-label="LinkedIn"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="mailto:haikalfitri.hassim@gmail.com" aria-label="Email"><i class='bx bxs-envelope'></i></a>
+            </div>
+            <p class="footer-note">Built with plain HTML, CSS &amp; JavaScript · Hosted on GitHub Pages</p>
+        </div>
+    </footer>
 
     <!-- custom js -->
     <script src="javascript/script.js"></script>
