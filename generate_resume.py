@@ -132,7 +132,7 @@ def build_story(styles):
     story.append(Paragraph("Engineer, Digital Infrastructure Support", styles["title"]))
     story.append(
         Paragraph(
-            "+60 111 932 9198 &nbsp;|&nbsp; "
+            "+60 111 449 1024 &nbsp;|&nbsp; "
             '<a href="mailto:haikalfitri.hassim@gmail.com" color="#3282b8">haikalfitri.hassim@gmail.com</a> &nbsp;|&nbsp; '
             '<a href="https://www.linkedin.com/in/muhdhaikalfitri" color="#3282b8">linkedin.com/in/muhdhaikalfitri</a>',
             styles["contact"],

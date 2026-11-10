@@ -125,7 +125,7 @@ def build(doc):
     )
     add_paragraph(
         doc,
-        "+60 111 932 9198  |  haikalfitri.hassim@gmail.com  |  linkedin.com/in/muhdhaikalfitri",
+        "+60 111 449 1024  |  haikalfitri.hassim@gmail.com  |  linkedin.com/in/muhdhaikalfitri",
         size=9.5,
         color=MUTED,
         space_after=2,
