@@ -1,0 +1,8 @@
+# Binary assets: never convert line endings or diff as text.
+# Without this, git treats the generated resume PDF as text and can
+# rewrite its line endings on checkout, which damages the file.
+*.pdf  binary
+*.docx binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
