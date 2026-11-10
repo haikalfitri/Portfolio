@@ -139,39 +139,55 @@ def build(doc):
     )
     add_bottom_border(header_loc)
 
+    # Profile
+    add_section_heading(doc, "Profile")
+    add_paragraph(
+        doc,
+        "Infrastructure and IT operations engineer covering networking, endpoint security, Microsoft 365 "
+        "and OT/SCADA support, with a compliance-first approach (ISO/IEC 27001:2022, CIS Benchmarks). "
+        "Builds PowerShell and Python tooling to automate onboarding, auditing and monitoring.",
+        size=10,
+    )
+
     # Experience
     add_section_heading(doc, "Experience")
 
     add_role(doc, "Engineer, Digital Infrastructure Support", "Cypark Sdn Bhd  ·  2025 – Present")
     for item in [
-        "Manages Proxmox virtualization environment and backup systems to ensure platform reliability.",
-        "Conducts SCADA vulnerability assessments to safeguard operational technology networks.",
-        "Manages firewalls, switches, and access points across the corporate network.",
-        "Deployed Splashtop remote access to support distributed engineering and operations teams.",
-        "Handles IT onboarding and end-user device provisioning across the organisation.",
-        "Administers Microsoft 365 and SharePoint, including identity, licensing, and collaboration workspaces.",
-        "Drives AI-driven workflow automation to streamline internal IT and business processes.",
+        "Manage the Proxmox virtualisation environment and backup systems to keep the platform reliable.",
+        "Maintain HPE and Aruba switching, VLAN segmentation and network documentation across HQ and remote "
+        "sites, and configure Palo Alto (PAN-OS) firewall rules.",
+        "Led the company-wide Splashtop remote access deployment, enrolling around 70 endpoints.",
+        "Conduct SCADA vulnerability assessments and drafted the guideline for controlling automatic "
+        "Windows Updates on plant OT PCs.",
+        "Enforce ISO/IEC 27001:2022-aligned endpoint controls through Intune and Defender for Endpoint, "
+        "including USB storage whitelisting and UAT of a Windows device rollout for about 30 users.",
+        "Wrote a 137-control PowerShell audit script that maps Windows 11 hardening checks to CIS Benchmarks "
+        "and ISO 27001:2022.",
+        "Led incident response and staff awareness for a social-engineering malware attempt and a "
+        "browser-notification scareware incident.",
+        "Built a PowerShell automation suite for onboarding, server cleanup and disk monitoring, and automate "
+        "IT workflows with Power Automate and Microsoft Graph.",
+        "Administer Microsoft 365, Entra ID and SharePoint, including identity, licensing and collaboration workspaces.",
+        "Evaluate vendor proposals for solar-farm CCTV and monitoring systems, weighing capex against "
+        "managed-service options and flagging SLA and exit-clause risks.",
     ]:
         add_bullet_text(doc, item)
 
     add_role(doc, "Business / System Analyst (GEES)", "PETRONAS Carigali Sdn Bhd  ·  Jul 2023 – Jul 2024")
     for item in [
+        "Analysed and reported on process flows for a Lean Six Sigma fuel-recoupment project, contributing to "
+        "a 70% reduction in lead time and about 4,000 manhours saved.",
+        "Managed reporting for the Vessel Tracking System (VTS), contributing to a 25% lead-time improvement "
+        "and about 71,280 manhours saved.",
         "Led data integration for the Marine Intelligence System (MARSIS) to unify logistics data sources.",
         "Played a key role in User Acceptance Testing (UAT) of digital logistics tools prior to production rollout.",
-        "Streamlined logistic digital tools, materially reducing manhours required for routine reporting.",
-        "Implemented the HSE Assurance Program tracking workflow used across operational teams.",
-        "Coordinated the Mentorship Program and a fuel benchmarking initiative applying Lean Six Sigma methods.",
-        "Facilitated engagement and onboarding with over 40 contractors and external partners.",
     ]:
         add_bullet_text(doc, item)
 
     add_role(doc, "Web Developer Intern", "UiTM Technoventure  ·  Sep 2022 – Jan 2023")
     for item in [
-        "Conducted stakeholder interviews to gather and document system requirements.",
-        "Developed flowcharts and process diagrams describing core system functionalities.",
-        "Managed MySQL database operations including schema design, queries, and maintenance.",
-        "Enhanced UI/UX design across internal web applications.",
-        "Engineered web pages and forms using HTML, CSS, and PHP.",
+        "Built web pages and forms with HTML, CSS and PHP, and managed the MySQL database for an internal web application.",
     ]:
         add_bullet_text(doc, item)
 
@@ -192,23 +208,25 @@ def build(doc):
     add_section_heading(doc, "Technical Skills")
     add_skill_line(
         doc,
-        "Systems & IT",
-        "Proxmox, Network Configuration, Network Security, Remote Access (Splashtop), "
-        "Microsoft 365 Admin, SharePoint, SCADA Networks, AI Workflow Automation",
-    )
-    add_skill_line(doc, "Tools", "Wireshark, pfSense / Firewall, Power BI, Tableau, Excel, SQL Server, phpMyAdmin")
-    add_skill_line(doc, "Programming", "Python, SQL, R, Java, HTML, CSS, JavaScript")
-    add_skill_line(doc, "Data Science", "Data Analysis, Machine Learning, NLP, Data Visualization")
-    add_skill_line(
-        doc,
-        "Software Development",
-        "Version Control, UAT, Data Integration, Database Management, Agile",
+        "Infrastructure",
+        "Proxmox, HPE / Aruba Switching, VLAN Design, Palo Alto PAN-OS, pfSense, Wireshark, "
+        "Remote Access (Splashtop), SCADA / OT Networks, AWS (introductory)",
     )
     add_skill_line(
         doc,
-        "Soft Skills",
-        "Problem Solving, Adaptability, Collaboration, Integrity, Resilience, "
-        "Continuous Learning, Attention to Detail",
+        "Microsoft Platform",
+        "Microsoft 365 Admin, Entra ID, Intune, Defender for Endpoint, Active Directory, "
+        "SharePoint, Power Automate, Microsoft Graph",
+    )
+    add_skill_line(
+        doc,
+        "Security and Compliance",
+        "ISO/IEC 27001:2022, CIS Benchmarks, PDPA, Incident Response, Endpoint Hardening",
+    )
+    add_skill_line(
+        doc,
+        "Automation and Data",
+        "PowerShell, Python, SQL, Git, Power BI, Excel, HTML / CSS / JavaScript",
     )
 
     # Personal Projects
@@ -216,31 +234,28 @@ def build(doc):
     add_bullet(
         doc,
         [
+            ("PC Health and Crash Analyzer", {"size": 10, "bold": True}),
+            (
+                " — Python/tkinter desktop tool packaged with PyInstaller for USB deployment; reads hardware specs "
+                "and Event Logs, detects BSODs and hanging apps, checks Windows Update and BitLocker, and exports CSV/PDF.",
+                {"size": 10},
+            ),
+        ],
+    )
+    add_bullet(
+        doc,
+        [
             ("Twitter Sentiment Analysis of Open Distance Learning (ODL)", {"size": 10, "bold": True}),
             (" — NLP, Pandas, RapidMiner, Power BI.", {"size": 10}),
         ],
     )
-    add_bullet(
-        doc,
-        [
-            ("Monster Movie Analysis App with Predictive Modeling", {"size": 10, "bold": True}),
-            (" — Shiny web app with predictive modelling.", {"size": 10}),
-        ],
-    )
-    add_bullet(
-        doc,
-        [
-            ("FM24: Wonderkid Recruiting Analysis", {"size": 10, "bold": True}),
-            (" — Statistical analysis and interactive dashboards.", {"size": 10}),
-        ],
-    )
 
-    # Certifications
-    add_section_heading(doc, "Certifications")
+    # Certifications and training
+    add_section_heading(doc, "Certifications and Training")
     for item in [
         "2024  ·  PETRONAS Lean Six Sigma Yellow Belt.",
         "2024  ·  PETRONAS Citizen Analytics Certificate.",
-        "2023  ·  Coursera — Foundations: Data, Data, Everywhere.",
+        "AWS Landing Zone workshop (two days) — Organizations, Control Tower, SCPs, IAM Identity Center.",
     ]:
         add_bullet_text(doc, item)
 
